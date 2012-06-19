@@ -1,0 +1,18 @@
+<!-- define subject "Three's" -->
+<!-- define created "Wed Apr 24 11:16:06 CST 2002" -->
+
+    <p>A simple puzzle game where you try to line up each of the different colors
+    of pegs. The trick is that once the pegs of the same color are in a row or
+    column, they lock in place and cannot be moved anymore. Once all of the pegs
+    are thus locked, you have won. It is a simple idea that is harder to do than it
+    sounds.</p>
+<p>Downloads:
+<ul>
+    <li><a href="archives/Threes3.1_any.tar.gz">3.1 any</a></li>
+    <li><a href="archives/Threes3.1_mac.tar.gz">3.1 MacOSX</a></li>
+</ul></p>
+<p>Screenshots:
+<ul>
+    <li><a href="images/threes_screenshot.png">3.0.1 MainWindow</a></li>
+</ul>
+</p>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>portalldep now in Io</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2006-07-26T15:10:19-05:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<!--[if IE]>
+<link href="/iekludging.css" media="screen" rel="Stylesheet" type="text/css" />
+<![endif]-->
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>portalldep now in Io</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p>Well, I went out and got the latest version (<small>as in pulled down the repo</small>) of <a href="http://iolanguage.com/">Io</a>, because it had the new the <a href="http://www.iolanguage.com/blog/blog.cgi?do=item&amp;id=74">SystemCall</a>.  And then I retried my <a href="Twisty_paths_of_pieces_of_code.html">last attempt</a>.  Hurrah, it works!  I tried making use of coroutines and futures, but they don&#8217;t seem to be going.  Not sure if it is me or SystemCall.  (<small>it was me.</small>)</p>
+
+<p>May not be the prettiest io, but I&#8217;m still trying to figure this out.</p>
+
+<p>Updated, I fear I am having fun. Retweeked to use Set instead of Map. Not really any different.</p>
+
+<pre><code>#!/usr/bin/env ioDesktop
+#
+# 26 July 2006 by Michael Conrad Tadpol Tilstra
+# find all deps for given port[s]
+# currently ignores varients.
+# results prefixed with + are not currently installed on your system.
+
+if(args size == 0,
+    writeln("portalldeps &lt;ports&gt;")
+    exit(1)
+)
+Set := List clone do(
+    append := getSlot("appendIfAbsent")
+    merge := method(lst, lst foreach(i, append(i)))
+    diff := method(set, set select(v, contains(v) not))
+)
+search := Set clone merge(args)
+search removeFirst
+found := Set clone merge(search)
+
+while(search size &gt; 0,
+    lst := SystemCall clone do(
+        setCommand("port")
+        arguments append("deps", search removeFirst)
+    ) run stdout readLines select(beginsWithSeq("\t")) map(removePrefix("\t"))
+    search merge(found diff(lst))
+    found merge(lst)
+)
+
+installed := SystemCall clone do(
+    setCommand("port")
+    arguments append("installed")
+    ) run stdout readLines select(beginsWithSeq("  ")) map(between("  ", " "))
+found sortBy(block(a,b,a&lt;b)) foreach(k, 
+    if(installed contains(k), 
+        writeln("  " .. k), 
+        writeln("+ " .. k)
+    )
+)
+</code></pre>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="../projects/index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2006-2008 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

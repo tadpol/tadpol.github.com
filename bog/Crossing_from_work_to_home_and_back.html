@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Crossing from work to home and back with svk</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2006-12-19T17:32:06-06:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<!--[if IE]>
+<link href="/iekludging.css" media="screen" rel="Stylesheet" type="text/css" />
+<![endif]-->
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Crossing from work to home and back with svk</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p>I <em>finally</em> have a system for doing work on my home computer and on my work computer that doesn&#8217;t require weird hopping stunts.  Mostly this is just simply using one tool for watching over the source code, rather than trying to get multiples to do the job.  Nothing really amazing about this, since it is just another application of the distributed revision control models.  There is only just two little twists that are important to me.</p>
+
+<p>First is roll-ups, or whatever name you wish to call them by.  Basically, take a bunch of commits from this branch, roll them up into one commit over on this other branch.  I find it mildly disturbing how many of the tools don&#8217;t support that.  For me its rather needed.  Even without working on two computers, I&#8217;m a micro-commiter.  The repository pretty much becomes my own fancy (<small>heavyweight</small>) undo buffer.  This seems to bother my coworkers, so its nice to be able to send the micro-commits somewhere else.</p>
+
+<p>Second is to sanely deal with one of the upstream copies being <a href="http://subversion.tigris.org/">subversion</a>. As cool as distributed revision control systems are, work uses a centralized revision model. (<small>which for what we&#8217;re doing makes the most sense</small>) As such, the tool <em>has</em> to be able to speak to a <a href="http://subversion.tigris.org/">subversion</a> repository.  This turns out to be the real trick to finding a solution.</p>
+
+<p>I played with lots of the distributed revision control systems out there.  Lots of neat stuff, all with a couple of pluses and minuses.  But quite a few that bother trying to speak to other systems.  They all did this to varying levels of success.  Many just pointed to <a href="http://darcs.net/DarcsWiki/Tailor">Tailor</a>, which other than the roll-ups requirement, would have worked well.  But the subversion upstream thing pretty much pointed me to <a href="http://svk.bestpractical.com/view/HomePage">svk</a>.</p>
+
+<p>It took me a couple of passes through to figure out how to get <a href="http://svk.bestpractical.com/view/HomePage">svk</a> to do what I want.  But now that I&#8217;ve got things setup, its smooth.  Really, figuring out where to put everything and what to call it was the hard part.  In actual usage, it is just an extra call to <code>smerge</code> that didn&#8217;t exist before with plain <a href="http://subversion.tigris.org/">svn</a>.  Granted the messy part is that I basically have two upstreams. </p>
+
+<p>It is rather messy to try and describe, though it seems to actually work pretty well in practice.  There is the main upstream, which is what everyone works from.  Then there is my private upstream, which I use primarily to sync changes from home and work before the changes are ready to be put in the main upstream.  Both of those are just mirrored in each of the local <a href="http://svk.bestpractical.com/view/HomePage">svk</a> <code>depotmap</code>.  Then a local branch on each machine where the working copy is checked out from.</p>
+
+<p>Personally, I made a picture to help me understand what I&#8217;m doing:<br /></p>
+
+<p><img src="../images/repos-svk.png" height="393" width="493" /></p>
+
+<p><a href="http://svk.bestpractical.com/view/HomePage">svk</a> still is missing some things though.  Cherry-picking changes during <code>commit</code> or <code>smerge</code> for example.  Not something I use very often, but once in a while it is needed to the ends of belief.  (<small>in the mean time, extra crap just gets checked in.</small>)  I had been using <a href="http://darcs.net/">darcs</a>, and have gotten to really like the way it does <code>record</code> to the point of wishing that I could get that on <code>push</code> and <code>pull</code> too.</p>
+
+<p>Previously, I was using a combination of <a href="http://subversion.tigris.org/">svn</a>, <a href="http://darcs.net/">darcs</a>, and <a href="http://tadpol.org/projects/dirdiff.html">dirdiff</a>.  Which, while it worked, was prone to inducing massive headaches. (<small>things were mostly ok until something got renamed, then hell broke loose.</small>) So I&#8217;m quite happy that this is running smoother now.</p>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="../projects/index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2006-2008 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- define subject "bmktotables.rb" -->
+<!-- define created "Sun Feb 2 17:37:51 CST 2003" -->
+    <p>
+    This was replaced by a XSLT template, so this is no longer maintained.
+    </p>
+    <p>
+    I got tired of the way the php3 outline viewer thing for my bookmarks
+    page was working, and so decided to work on a replacement.  After toying
+    with a handful of different ideas, I decided on something that would
+    have an output much like a column browser found in Mac OS X or NeXTStep.
+     It is kind of there.  I stopped trying to use a plain old html input,
+    and switched to xml with my own special dtd. (<small>well ok, I haven't
+    bothered to write the DTD yet...</small>)  To see what kind of output it
+    has, hit the Link Farm link below.
+    </p>
+    <p>This is written in <a href="http://www.ruby-lang.org/">ruby</a>, and
+    requires 
+    <a href="http://www.germane-software.com/cgi-bin/software">rexml</a>. 
+    There are a couple of features that I am still wanting to add.  Then
+    probably some code clean up, and it should be done then.
+    </p>
+    <p>Recently upgraded for rexml 2.7</p>
+    <p>Downloads:
+<ul>
+    <li><a href="archives/bmktotables.rb.gz">0.2</a></li>
+</ul>
+</p>

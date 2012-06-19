@@ -1,0 +1,15 @@
+<!-- define subject "GKrellM qst" -->
+<!-- define created "Wed Mar 26 17:03:06 CST 2003" -->
+    <p>Simple plug-in for <a href="http://gkrellm.net">GKrellM</a> that queries a
+    quake server, and displays how many players are in the current map, and the
+    name of the current map.
+    </p>
+    <p>Jindrich Makovicka ported this to the GKrellM 2.x codebase.  Listed 
+    <a href="http://kmlinux.fjfi.cvut.cz/~makovick/gkrellm/">here</a> about
+    half way down.
+    </p>
+<p>Downloads:
+<ul>
+    <li><a href="archives/gkrellm_qst-0.4.tar.gz">0.4</a></li>
+</ul></p>
+

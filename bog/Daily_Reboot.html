@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Daily Reboot</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2006-06-29T16:22:38-05:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<!--[if IE]>
+<link href="/iekludging.css" media="screen" rel="Stylesheet" type="text/css" />
+<![endif]-->
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Daily Reboot</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p>I&#8217;m not fully sure I will ever be able to truly capture my opinions on the quality of the broadband I have.  I only have two choices, DSL or cable.  Since cable doesn&#8217;t allow personal servers, I have DSL.  Now just this on the surface, it works as one would expect.  The clincher takes some time.</p>
+
+<p>After a while, the DSL modem locks up.  How long this takes appears to be related to traffic load.  More traffic, quicker time to lockup.  If I max the up and down bandwidth for about 10 minutes, the modem will lock up sometime in the next couple of hours.  That in-precision of timing is what makes this so frustrating.  Current usage gives me roughly three days of running before it locks up.</p>
+
+<p>The lock up is fixed by rebooting my modem.  How much of this is resetting my hardware, or breaking the link and letting their hardware restart, I don&#8217;t know.  This solution is also the one that is stated on the web site and what you&#8217;re given if you phone support.  So this is how I&#8217;m stuck fixing it.  So, automation.</p>
+
+<p>Finding an inexpensive single port NPS is difficult, besides, I&#8217;ve got X10 stuff lying around unused.  So, grab the base module and the firecracker and TADA! I can reboot the DSL modem automagically.  This brings up the second major suck of my modem.</p>
+
+<p>I run servers.  I like to be able to get to these, by name, from other machines that are within my home network.  This is often referred to as nat loopback.  For what ever reason I cannot get (<small>or figure out</small>) my modem to save this setting to nvram.  I finally gave up and just wrote a small expect script.  Bit kludgly, but it gets the job done.</p>
+
+<p>So now I&#8217;ve got something to restart and reconfigure my DSL modem.  Now if I was super-cool, I&#8217;d tie this into some kind of daemon that would detect when the DSL locked up.  Probably by pinging some outside host.  But I&#8217;m lazy, so I just used cron.  I figure if I just &#8216;restart&#8217; the time to lock up faster than it actually locks up, it won&#8217;t get a chance to lock up on me.  (<small>I hope.</small>)  I&#8217;ll see how this goes, if this doesn&#8217;t work out, I&#8217;ll try building up the ping detect daemon thing.</p>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="../projects/index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2006-2008 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

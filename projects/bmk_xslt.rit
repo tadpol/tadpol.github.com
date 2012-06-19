@@ -1,0 +1,25 @@
+<!-- define subject "bmk_xslt" -->
+<!-- define created "Sun Mar 21 18:57:16 CST 2004" -->
+<p>
+This is a XSLT template to do what I had previously been doing with a
+ruby script.  There isn't really any reason for doing this in XSLT
+instead of Ruby, I just needed something to learn XSLT with.
+</p>
+<p>
+The template takes a XML file that follows the included bmk.dtd and
+turns into a set of pages that roughly simular a column browser for the
+links.  To see what kind of output it produces, just follow the Link
+Farm below.
+</p>
+<p>
+Example XML, DTD, and XSLT are all included in the package.
+</p>
+<p><b>Update [</b>Mon Mar 29 23:27:30 CST 2004<b>]</b><br>
+Found a way to use some css to avoid having tables within tables.  So I switched
+things to work that way.
+</p>
+<p>Downloads:
+<ul>
+<li><a href="archives/bmk.tar.gz">0.2</a></li>
+</ul>
+</p>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Avrian Jump</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2012-02-02T10:44:00-06:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+<link href="../images/tadpol_icon_57.png" rel="apple-touch-icon" type="image/png" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" type="text/css" media="screen" />
+<link href="../tadpol.css" rel="Stylesheet" type="text/css" media="screen" />
+<link href="../print.css" rel="Stylesheet" type="text/css" media="print" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Avrian Jump</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p><a href="images/avrianjump.jpg" class="thickbox" rel="projectsAvrianJumphtml"><img src="images/avrianjump-thumb.jpg" height="240" alt="Arduino with Audioino and a MacBook running Safari and Avrian Jump" width="320" /></a></p>
+
+<p>A very simple ladder language for programming ATMega168s from a web browser.</p>
+
+<p>This started out as a desire to be able to program an <a href="http://www.arduino.cc/">Arduino</a> from an iOS device.  Since it
+doesn&#8217;t seem like compiler tools of any sort would get into the app store, I figured something
+would need to be done in HTML5.  And if a <a href="http://bellard.org/jslinux/">PC emulator</a> could be written in javascript,
+so could something like this.</p>
+
+<p>However, recreating the Arduino IDE in HTML seemed like too much work, at least for a first
+try.  So I reduced the project into something much simpler, while still putting real machine
+code into the AVR&#8217;s flash.  A simple ladder language that compiled into AVR assembly, which
+would be assembled into machine code, seemed like like a resonable reduction.  With that I
+could take advantage of the <a href="http://www.hobby-roboter.de/forum/viewtopic.php?f=4&amp;t=128&amp;p=531">Audioino</a> bootloader, to load right from the web page.</p>
+
+<h2>Download</h2>
+
+<p><a href="http://github.com/tadpol/Avrian-Jump">Avrian Jump</a> is on <a href="http://github.com/">GitHub</a>, so head over there to
+look at it.</p>
+
+<h2>The Ladder</h2>
+
+<p>Each rung on the ladder has a single test and multiple actions.  Tests can check the digital
+pins, analog pins, and a couple of variables.  Each action can set a digital pin, a PWM output,
+or a variable.  Analog, PWM, and variables are 16bit values.</p>
+
+<p>There is no &#8216;setup()&#8217;.  Analog pins are always analog inputs.  When specified in a test, a
+digital pin is set to an input then read.  When specified in an action, it is set to an output
+then set.</p>
+
+<p>PWM code is still non-existant, so how this will actually work is up in the air.  How I want it
+to work is:  Specifying a pin in an action as a PWM output makes it a PWM output.  Specifying a
+pin in a test stops it from doing PWM output.  Specifying a digital state for the pin in an
+action also stops it from doing PWM output.</p>
+
+<p>There is an ascii format of the ladders.  This was done because it seemed like it could be neat
+to be able to tweet ladders.  You can view the ascii format, and also load ladders from it.
+The ascii parser skips anything it doesn&#8217;t recognise; it is a bit too forgiving at times.</p>
+
+<p>An example program:</p>
+
+<pre><code>#Fast Blink LED
+:T;A+=1
+:A=16383;D13=1
+:A=32767;D13=0,A=0
+</code></pre>
+
+<p>Mostly though, a ladder is converted into AVR assembly.</p>
+
+<h2>The Assembler</h2>
+
+<p>The assembler is pretty basic. Lots of features commonly found in other assemblers are
+currently missing.  It does assemble the mneonics from <a href="http://www.atmel.com/atmel/acrobat/doc0856.pdf">Atmel&#8217;s pdf</a> into machine code.
+It supports labels, but not local labels.  It has simple parameter replacement, so common names
+can be defined for IO registers and memory regions and things.  It can also specify where in
+memory to put the machine code, and can specify immeadiate words to save in the machine code.</p>
+
+<p>This assembler doesn&#8217;t know about the various AVR devices, and so will happily assemble any of
+the known mnemonics into the output.  Even if your target device has no idea what to do with
+them.  It has assembled blink tests for the ATmega168 and the ATTiny13, so it seems pretty
+flexable. (Avrian Jump currently only supports the ATmega168 though.  Maybe add others in the
+future, but would have to figure the bootloader thing out first.)</p>
+
+<h2>Outputs</h2>
+
+<p>A ladder can be compiled into a few different formats:</p>
+
+<ul>
+<li>ASCII
+<ul>
+<li>This the only form can can be converted back into a ladder.</li>
+<li>This is for sharing your ladder with others, or saving a ladder for later.</li>
+</ul></li>
+<li>S19
+<ul>
+<li>If you don&#8217;t have an <a href="http://www.hobby-roboter.de/forum/viewtopic.php?f=4&amp;t=128&amp;p=531">Audioino</a> bootloader, but still want to use a ladder.  A S19 can be
+saved as a file, and loaded with <a href="http://ladyada.net/learn/avr/avrdude.html">avrdude</a>.</li>
+</ul></li>
+<li>WAV
+<ul>
+<li>A <a href="http://www.hobby-roboter.de/forum/viewtopic.php?f=4&amp;t=128&amp;p=531">Audioino</a> compatible wav file for loading the ladder onto an ATmega168 with the
+<a href="http://www.hobby-roboter.de/forum/viewtopic.php?f=4&amp;t=128&amp;p=531">Audioino</a> bootloader installed.</li>
+</ul></li>
+<li>Assembler
+<ul>
+<li>This is mostly around for debugging the ladder compiler.  It can be interesting to look at
+too.</li>
+</ul></li>
+</ul>
+
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="../bog/index.html">Bog</a></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2012 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

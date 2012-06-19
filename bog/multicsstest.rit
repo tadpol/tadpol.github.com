@@ -1,0 +1,33 @@
+<!-- define created "Mon Jun 30 11:38:49 CDT 2003" -->
+<!-- define subject "Using Multiple CSSes" -->
+<!-- define tagline "Looking good for everyone. Pick the {style} you like." -->
+
+
+<p>This is neat.  One data source, multiple looks.  This is what [i think]
+the web should be.  Though the downside is I now will have multiple styles to 
+keep up and check.  And I quite possibly won't work too well on some slightly
+broken web browsers.  Oh well, its not like I get more than a handful of visitors
+anyways.
+ I'm still not happy about the selector either.  Not sure what to do there, I
+guess I'll just have to try a bunch of stuff.  Hopefully something will
+shine through.
+</p>
+
+<p>Mostly all I am after here is have both black text on white background
+(<small>well, grey background</small>) and white-ish text on black
+background.  I really prefer black backgrounds, but plenty of people
+complain that this makes the stories hard to read.  I dissagree, and never
+would redesign the site just because of that.  And now I don't have to!
+Both styles can be available, and with just a click to switch.  Is very
+neat.
+</p>
+
+<p>
+Not sure if I will stick this on the entire site, or just part of it.
+The stories section is what needs it, and perhaps this section too.  Duno 
+if it makes sense elsewhere.  We will see.  In any case, I'm gonna take my 
+time converting the pages over to this.  It is a rather large change to hit all
+the files that will get it. (<small>and this is also an excuse to unmuck some behind
+the scenes stuff.</small>)
+</p>
+

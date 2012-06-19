@@ -1,0 +1,146 @@
+<!-- define title "Tadpol&rsquo;s state of Reality" -->
+<!-- define created "Sat Mar 18 14:45:46 CST 2006" -->
+
+<!-- won't give up
+     it wants me dead
+     god damn this voice inside my head. -->
+
+<h3>A Quick intro...</h3>
+<p>
+ Hi hi.  I was given the name Michael, but tend to use Tadpol instead.
+(<small>God only knows why.</small>)
+Sometimes I wonder if I should say anything important here.  Other times I think
+it would be best if I said nothing at all.  However, if I am to say nothing at all
+there would not be much point in having a web site.  I like having a web site, so I feel 
+that I must strive to have something to say.  Thus I find that I am often saying nothing,
+but with a great deal many more words than nothing really deserves.
+</p>
+
+<dl class="KENTBREW">
+<dt class="hd"><a href="projects/">Some Things Built…</a></dt>
+<dd class ="bd">
+<group_links src="projects/*.{txt,text,markdown}" limit="3" exclude="projects/index.text"></group_links>
+</dd>
+</dl>
+
+<dl class="KENTBREW">
+<dt class="hd"><a href="recipes/">Some Things Ate…</a></dt>
+<dd class ="bd">
+<group_links src="recipes/*.{txt,text}" limit="3" exclude="recipes/index.text"></group_links>
+</dd>
+</dl>
+
+<dl class="KENTBREW">
+<dt class="hd"><a href="bog/">Some Things Said…</a></dt>
+<dd class ="bd">
+<group_links src="bog/*.{txt,text}" limit="3" exclude="bog/index.text bog/archive.text"></group_links>
+</dd>
+</dl>
+
+<dl class="KENTBREW">
+	<dt class="hd">
+	<a href="http://twitter.com/tadpol">Some Things Babbled…</a>
+	</dt>
+	<dd class="bd"><ul id="twitter_update_list"></ul></dd>
+</dl>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=tadpol&amp;count=3&amp;include_rts=true&amp;callback=twitterCallback2"></script>
+
+
+<dl id="delicious-list" class="KENTBREW">
+	<dt class="hd">
+	<a href="http://del.icio.us/tadpol">Some Sites Visited…</a>
+	</dt>
+	<dd class="bd" id="delicious-posts-tadpol"></dd>
+</dl>
+
+<script type="text/javascript">
+function deliciousCallback(posts) {
+	var ul = document.createElement('ul')
+	for (var i=0, post; post = posts[i]; i++) {
+        var li = document.createElement('li')
+        var a = document.createElement('a')
+        var te = document.createElement('span')
+        li.setAttribute('class', 'delicious-post')
+        a.setAttribute('href', post.u)
+        a.appendChild(document.createTextNode(post.d))
+        li.appendChild(a)
+		if(post.n) {
+			li.appendChild(document.createTextNode(' '))
+			te.appendChild(document.createTextNode(post.n))
+			li.appendChild(te)
+        }
+        ul.appendChild(li)
+	}
+    document.getElementById('delicious-posts-tadpol').appendChild(ul)
+}
+</script>
+<script type="text/javascript" src="http://feeds.delicious.com/v2/json/tadpol?count=3&amp;callback=deliciousCallback"></script>
+
+<!-- because i think its funny for this to randomly place itself on the page. -->
+<div id="Fuse-Box-Dwarf">Dreeb! Dreeb! I am a Home Page Virus! Copy me into your home page!</div>
+<script language="javascript" type="text/javascript" >
+$(function(){
+    var l = $("#content dl,#content table");
+    var r = Math.floor(Math.random()*l.length);
+    $("div#Fuse-Box-Dwarf").insertBefore(l[r]);
+});
+</script>
+
+
+<!-- http://www.librarything.com/wiki/index.php/LibraryThing_JSON_Books_API -->
+<table id="readbooks" class="booktable">
+<tr><th colspan="2"><a href="http://www.librarything.com/catalog/tadpol">Some Books Read…</a></th></tr>
+<tr><td width='50%'></td> <td></td></tr>
+<tr><td></td> <td></td></tr>
+</table>
+<script language="javascript" type="text/javascript">
+function readbookscallback(booklist, name) {
+    var tds = $("table#readbooks td");
+    var i = 0;
+    for (var b in booklist.books ) {
+        $(tds[i]).append("<a href=\"http://www.librarything.com/isbn/" + 
+                         booklist.books[b].ISBN_cleaned + "\">" +
+                         "<img src=\"" + booklist.books[b].cover + "\">" +
+                         "<\/a>" +
+                         "<a href=\"http://www.librarything.com/isbn/" + 
+                         booklist.books[b].ISBN_cleaned + "\">" +
+                         booklist.books[b].title + 
+                         "<\/a> by " +
+                         "<a href=\"http://www.librarything.com/author/" +
+                         booklist.books[b].author_code + "\">" +
+                         booklist.books[b].author_fl + "<\/a>"
+                        );
+        i++;
+    }
+}
+</script>
+<script src="http://www.librarything.com/api_getdata.php?userid=tadpol&max=4&coverheight=72&booksort=entry_REV&callback=readbookscallback"></script>
+
+<!-- why do I keep this depressing stuff stashed in comments like this?
+<p>
+I think somewhere along the line<br>
+I was suppose to care.<br>
+But no matter what you put into this,<br>
+the results are the same; you die.<br>
+There is no where to go <br>
+that you haven't been.<br>
+And no where you've been<br>
+that is worth going to.<br>
+So give it all you got,<br>
+or give it nothing at all.<br>
+I'll see you at the end either way,<br>
+with everyone else and thier friends,<br>
+and with not a thing to claim as our own<br>
+that was worth remembering now or then.
+</p>
+-->
+<!-- I miss these, I just don't know where to stick them.
+<li>For the first time in your memory, you're generating your own light.</li>
+<li>If I touch you, will you burn?</li>
+<li><code>sleep `date '+23 %H-3600*60 %M-60*+p' | dc`</code></li>
+<li>I live on Farm 28.</li>
+<li> just so you all know, I'm losing my mind.</li>
+<li>sometimes I bother myself……Usually on weekends.</li>
+-->

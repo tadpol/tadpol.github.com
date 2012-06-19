@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Site Update</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2005-10-25T15:14:00-05:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<!--[if IE]>
+<link href="/iekludging.css" media="screen" rel="Stylesheet" type="text/css" />
+<![endif]-->
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Site Update</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p>Right, so if you haven&#8217;t noticed by now, I updated my web site.  Massive changes were made.  The back end is now dynamic driven with Typo.  It is a rather nice piece of code.  I&#8217;ve been playing with it for a couple of months before I decided to go with it.  Had to write up a custom importer to get the data from my old site in.  Then wrote a variant of that importer to generate a whole bunch of Redirect commands for Apache.  So all the old links should give a 301 and then the new location.</p>
+
+<p>Except, that is, for the parts of the site that are still static.  Those bits are linked in with Alias directives. (<small>Yeah, those would be the &#8220;Other Things&#8221; over on the right there.</small>)  Still going over things and making sure everything is working.  I&#8217;d say I have that done too, but as soon as I do, something will pop up.</p>
+
+<p>Then the whole front end of things.  Basically, I got tired of black.  (<small>Weird, I know.</small>)  Played with a lot of different colors and such, but nothing really worked.  Then as I&#8217;m passing a mirror, it clicks into my brain what I was wearing, olive green sweatshirt, khaki cargo pants, and a black t-shirt.  My brain went, &#8220;duh.&#8221; and I put those colors into the site.  Seems to have worked out pretty well I think.</p>
+
+<p>There was also a lot of work on an image that was gonna fill the space at the top.  Never could get it to work out like what is lurking in my head though.  I am going to keep trying for a while, but the traces of code in the background works.  Might just leave it like this.  (<small>Ah, but the gears and vines of circuitry would have been so neat.</small>)</p>
+
+<p>So, upgrade and redesign are pretty much done, save for a few minor tweaks here and there.  Feels good to have it finished.</p>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="../projects/index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2005-2008 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

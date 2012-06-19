@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Be Warned!</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="1998-05-27T00:00:00-05:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<!--[if IE]>
+<link href="/iekludging.css" media="screen" rel="Stylesheet" type="text/css" />
+<![endif]-->
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Be Warned!</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+
+
+
+<p>Should you ever get a mental lasp and decide that you can take four 5xxx Csci and a 
+part time job, you will find that watching computers compute things like 
+the following completely fascinating.</p>
+<hr size="6" />
+
+<p>This was supposed to converge if you did the ( .9 .* Out2) thing, it didn't for me. :)<br />
+<small>ok, can you tell I'm getting burned out?</small></p>
+
+<pre>
+>> TP(1) = 1000; TP(2)=8000;
+>> [nw1,nb1,nw2,nb2,te,tr] = trainbpx(W1,B1,'tansig',W2,B2,'tansig',In2,( .9 .* Out2),TP);
+TRAINBPX: 0/8000 epochs, lr = 0.01, SSE = 194.582.
+TRAINBPX: 1000/8000 epochs, lr = 0.0938492, SSE = 3.6085.
+TRAINBPX: 2000/8000 epochs, lr = 0.011494, SSE = 2.60787.
+TRAINBPX: 3000/8000 epochs, lr = 0.0125636, SSE = 2.4123.
+TRAINBPX: 4000/8000 epochs, lr = 0.00500449, SSE = 2.26408.
+TRAINBPX: 5000/8000 epochs, lr = 0.00455369, SSE = 2.2042.
+TRAINBPX: 6000/8000 epochs, lr = 0.00631009, SSE = 2.15314.
+TRAINBPX: 7000/8000 epochs, lr = 0.00456741, SSE = 2.11743.
+TRAINBPX: 8000/8000 epochs, lr = 0.00632909, SSE = 2.07979.
+
+TRAINBPX: Network error did not reach the error goal.
+  Further training may be necessary, or try different
+  initial weights and biases and/or more hidden neurons.
+
+</pre>
+<p>
+<img src="../images/trainepochs.png" height="415" width="522" />
+
+
+</p></div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="../projects/index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;1998-2008 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

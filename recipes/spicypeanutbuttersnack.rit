@@ -1,0 +1,23 @@
+<!-- define subject "Spicy Peanut Butter Snack" -->
+<!-- define created "Mon Sep 13 21:05:30 CDT 2004" -->
+
+<table class="recipe">
+<tr><th>Amount</th><th>Measure</th><th>Ingredient</th></tr>
+	<tr>
+		<td>even count</td> <td></td> <td>Tortillas</td>
+	</tr>
+	<tr>
+		<td></td> <td></td> <td>Smooth Peanut Butter</td>
+	</tr>
+	<tr>
+		<td></td> <td></td> <td>Sliced, pickled Jalapenos</td>
+	</tr>
+</table>
+
+<p>
+Spread peanut butter onto a tortilla, leaving space around the edges
+so it won't squish out.  Toss a few jalapenos on top, and cover with another
+tortilla.  Squish it down a bit so the peanut butter holds the two tortillas
+together and keeps the jalapenos in.
+</p>
+<p>Note: Lacking Jalapenos, you can use salsa, but that's really messy.</p>

@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<gpx
+ version="1.0"
+creator="GPSBabel - http://www.gpsbabel.org"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.topografix.com/GPX/1/0"
+xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<time>2005-06-20T21:38:19Z</time>
+<bounds minlat="44.099862976" minlon ="-93.568354798" maxlat="45.206840476" maxlon="-68.554402431" />
+<wpt lat="44.306502454" lon="-68.864219701">
+  <ele>11.180908</ele>
+  <name>002</name>
+  <cmt>002</cmt>
+  <desc>Day 1-1</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.353937823" lon="-68.824917208">
+  <ele>3.490479</ele>
+  <name>003</name>
+  <cmt>003</cmt>
+  <desc>Day 1-2</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.267380675" lon="-68.824460981">
+  <ele>28.003906</ele>
+  <name>004</name>
+  <cmt>004</cmt>
+  <desc>Day 2-1</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.229699159" lon="-68.742270637">
+  <ele>19.592407</ele>
+  <name>005</name>
+  <cmt>005</cmt>
+  <desc>Day 2-2</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.271974713" lon="-68.762652073">
+  <ele>17.429565</ele>
+  <name>006</name>
+  <cmt>006</cmt>
+  <desc>Day 3-1</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.311996959" lon="-68.726586252">
+  <ele>9.498657</ele>
+  <name>007</name>
+  <cmt>007</cmt>
+  <desc>Day 3-2</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.286986617" lon="-68.678406654">
+  <ele>1.327515</ele>
+  <name>008</name>
+  <cmt>008</cmt>
+  <desc>Day 3-3</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.241114473" lon="-68.589889314">
+  <ele>5.653442</ele>
+  <name>009</name>
+  <cmt>009</cmt>
+  <desc>Day 4-1</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.151163073" lon="-68.578717411">
+  <ele>3.009766</ele>
+  <name>010</name>
+  <cmt>010</cmt>
+  <desc>Day 4-2</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.128077552" lon="-68.752941471">
+  <ele>8.537354</ele>
+  <name>011</name>
+  <cmt>011</cmt>
+  <desc>Day 5-1</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.122294541" lon="-68.866844494">
+  <ele>-15.495361</ele>
+  <name>012</name>
+  <cmt>012</cmt>
+  <desc>Day 5-2</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.119530357" lon="-68.906261399">
+  <ele>4.451782</ele>
+  <name>013</name>
+  <cmt>013</cmt>
+  <desc>Day 5-3</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.243874382" lon="-68.558640406">
+  <ele>5.653442</ele>
+  <name>AN10</name>
+  <cmt>AN10</cmt>
+  <desc>Third Night Anchorage</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.151966479" lon="-68.661092995">
+  <ele>14.305298</ele>
+  <name>AN11</name>
+  <cmt>AN11</cmt>
+  <desc>Stonington</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.147122577" lon="-68.653609883">
+  <ele>7.335693</ele>
+  <name>AN12</name>
+  <cmt>AN12</cmt>
+  <desc>Forth Night Anchorage</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.234670885" lon="-68.697274989">
+  <ele>5.653442</ele>
+  <name>AN6</name>
+  <cmt>AN6</cmt>
+  <desc>Second Night Anchorage</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.369373936" lon="-68.794607995">
+  <ele>3.250122</ele>
+  <name>GAM</name>
+  <cmt>GAM</cmt>
+  <desc>First Night Anchorage</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.099862976" lon="-69.105160777">
+  <ele>9.739014</ele>
+  <name>START</name>
+  <cmt>START</cmt>
+  <desc>Harbor</desc>
+  <sym>Waypoint</sym>
+</wpt>
+<wpt lat="44.249112569" lon="-68.554402431">
+  <ele>40.260620</ele>
+  <name>WBS</name>
+  <cmt>WBS</cmt>
+  <desc>Wooden Boat School</desc>
+  <sym>Waypoint</sym>
+</wpt>
+</gpx>

@@ -1,0 +1,34 @@
+
+<!-- define tagline "You the Paranoid type? Need something to be {paranoid} about?" -->
+<!-- define subject "Paranoia" -->
+<!-- define created "Fri, Mar 13, 1998" -->
+
+<p>I just thought of this as I was looking at how well I was doing with my
+contribution to <a href="http://distributed.net">distributed.net</a> The whole
+idea behind this is if someone could get access to a large number of computers, 
+even if they're  not top class workstations, they can crack these tough cyphers.  
+But then the point to be taken is how do  they get access to that many machines?  
+Here's where the paranoia comes in.  </p>
+
+<p>So, lets say someone who was working on part of some system, oh like
+linux.(<small>the kernel</small>) And they felt a need to crack one of these
+cyphers.  They could put some code in the system to do the work during idle
+cycles.  They would need to set it up so it would only contact the main
+server when ever the user did something that transmitted packets.  This would
+keep transmit lights from blinking except when it was expected.  Think you could
+find these with a packet sniffer? Well, keep in mind that a packet sniffer works
+by talking with the kernel, and the kernel could easily mask those packets.  Even
+if they  were from a different machine, so long as it was the same kernel.  Of 
+course, one could avoid most of the hiding of the packets if they made some reason 
+for them being there, like some different kind of protocol or some such.(<small>you 
+know, the manager approach instead of the programmer approach.</small>) . </p>
+
+<p>It would pretty hard to detect. Although in a system like linux, sooner or
+later(<small>ok, sooner</small>) someone would see this code. But think about a
+closed system.  Think about a popular closed system.  One that runs on thousands
+of computers, is slow and bulky, and continually demands faster, bigger hardware
+to work. I'm telling you, it could be done. </p>
+
+<p>On a side note, has anyone ever sniffed packets on a network with wintels? 
+wtf are all of those packets of data?? </p>
+

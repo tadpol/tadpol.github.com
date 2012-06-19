@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Twisty paths of pieces of code</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2006-07-09T16:23:22-05:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<!--[if IE]>
+<link href="/iekludging.css" media="screen" rel="Stylesheet" type="text/css" />
+<![endif]-->
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Twisty paths of pieces of code</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p>Amazing how things that aren&#8217;t quite important get lost when you randomly follow them down the paths they take.  I don&#8217;t even remember what package got me started on all of this.  Basically, there was some <a href="http://darwinports.opendarwin.org/">port</a> I wanted to install.</p>
+
+<p>This thing with installing Ports on the mac is you&#8217;re never quite sure what else gets installed.  Yeah, you can do <code>port deps foo</code> and see what foo needs.  But what if those ports aren&#8217;t installed, and what about their needs?  A seemingly small port with a single dependency could quickly force your machine to spend the next day and a half downloading and compiling if you&#8217;re not careful.</p>
+
+<p>So I wrote a little bit of <a href="http://www.ruby-lang.org/">ruby</a> to figure out <em>all</em> of the dependencies a port will require.  I started this in <a href="http://iolanguage.com/">Io</a> actually, but got stuck when it appeared that Io doesn&#8217;t callout to shell programs.  The script is simple, and doesn&#8217;t support variants to a port, mostly because <code>port deps</code> doesn&#8217;t support variants. (<small>Rather, I cannot figure out how to get it to work, if it does.</small>)</p>
+
+<p>Given the smallness, I&#8217;m just dumping it right here:</p>
+
+<pre><code>#!/usr/bin/env ruby
+
+# 9 July 2006 by Michael Conrad Tadpol Tilstra
+
+# find all deps for given port[s]
+
+# currently ignores varients.
+
+# results prefixed with + are not currently installed on your system.
+
+
+
+if ARGV.empty?
+
+    puts "portalldep &lt;ports&gt;"
+
+    exit
+
+end
+
+found = Hash.new
+
+search = ARGV.dup
+
+
+
+search.each {|i| found[i] = '+'}
+
+
+
+while not search.empty?
+
+    pt = search.shift
+
+    res = %x{port deps #{pt}}.scan(/\t(.*)\n/).flatten
+
+    res.delete_if {|i| found.has_key? i}
+
+    res.each {|i| found[i] = '+'}
+
+    search += res
+
+end
+
+
+
+installed = %x{port installed}.scan(/^\s+(\S+)\s+/).flatten
+
+found.each_key {|k| found[k] = ' ' if installed.include? k}
+
+found.keys.sort.each { |k| puts " #{found[k]}#{k}"}
+</code></pre>
+
+<p>Funfun.  So given the smallness, I didn&#8217;t feel it deserved an entry in the <a href="/projects/index.html">projects</a> tree.  However I also didn&#8217;t want to just dump in into the <a href="/bog/index.html">bog</a> either.  This is when I&#8217;m like &#8220;oh yeah, I&#8217;ve got categories don&#8217;t I?&#8221;.  So poke around <a href="http://ranchero.com/marsedit/">MarsEdit</a> for a while, trying to figure out how to create a new category.  Huh, doesn&#8217;t look like there is a way to do that.</p>
+
+<p>Not a problem, this is what the <a href="http://www.apple.com/macosx/features/applescript/">AppleScript</a> menu is for.  Spent a rather confused morning trying to remember (<small>and learn</small>) AppleScript.  That language has never quite made sense to me.  Though it probably didn&#8217;t help any that I started out with a rather complex window that I was going to load from a nib.  I had wanted something more of a category manager.  Once I dropped all that and went with a simple dialog to create new categories everything got easier.  (<small>Still had to figure out AppleScript though.</small>)</p>
+
+<p>It doesn&#8217;t work yet though.  Seems the only way I can find to get MarsEdit to reload categories for a Blosxom type of weblog is to restart it.  Bummer.  Well, I posted to the <a href="http://www.newsgator.com/forum/messages.aspx?ForumID=11">forum</a>, now I wait.  Here&#8217;s the current script anyways.</p>
+
+<pre><code>(*
+
+New Blosxom Category
+
+
+
+Lets you create new categories for blosxom compatible weblogs.  Just pops a 
+
+dialog asking for the category name, and if it doesn't already exist, does a 
+
+shell callout to make the directory.
+
+
+
+Uses 'mkdir -p'  so you can create nested categories just by putting '/'s into 
+
+the new category name.
+
+
+
+9 July 2006 by Michael Conrad Tadpol Tilstra
+
+Copyright 2006 Michael Conrad Tadpol Tilstra
+
+*)
+
+
+
+tell application "MarsEdit"
+
+    try
+
+        set wb to selected weblog
+
+        set bpath to Blosxom folder path of wb
+
+        set cats to category names of wb
+
+    on error errMsg
+
+        display alert "Greeee!" message "Doesn't seem like you have a Blosxom type of weblog selected." as critical
+
+        return
+
+    end try
+
+
+
+    set res to display dialog "New Category:" default answer ""
+
+    if button returned of res is not "OK" then
+
+        return
+
+    end if
+
+    set newCat to text returned of res
+
+    if newCat does not end with "/" then
+
+        set newCat to newCat &amp; "/"
+
+    end if
+
+    if newCat is in cats then
+
+        display alert "Category " &amp; newCat &amp; " all ready exists" as warning
+
+        return
+
+    end if
+
+
+
+    set newPath to bpath &amp; newCat
+
+    do shell script "mkdir -p " &amp; newPath
+
+
+
+    -- get MarsEdit to reload the categories for this weblog...
+
+    -- umm, i think you need to restart MarsEdit to have it reload blosxom categories.
+
+    -- ick.
+
+end tell
+</code></pre>
+
+<p>Course, putting all this code inline makes me wish for some sort of pretty printing stuff to be added to the rendering code for my site.  Which I may or may not add.  In either case, I pretty much expect this entry to get edited a couple of times after I post it.  At the very least, I&#8217;d like to see the applescript get finished and moved over to projects.</p>
+
+<p>Now this is about where I discover that I don&#8217;t actually have category support.  What I have is the nifty discovery of FileList doing depth searches in <a href="http://rake.rubyforge.org/">Rake</a>.  So it finds, and renders entries in categories just fine.  Linking them however is broken.  So now I&#8217;m also stuck with the task of implementing that.  Or not, since this entry is the first time I&#8217;ve really thought of using categories.</p>
+
+<p>Maybe I&#8217;ll just work on pretty print of inlined code blocks.  Or maybe, since the sun went to bed, I&#8217;ll do the same thing.</p>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="../projects/index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2006-2008 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

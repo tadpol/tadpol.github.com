@@ -1,0 +1,15 @@
+
+# Contact info submission
+
+url: tadpol.org/
+site_owner: Michael Conrad Tadpol Tilstra
+address1: 
+address2: 
+city: Minneapolis
+state: MN
+country: US
+postal_code: Unlisted
+phone_number: Unlisted
+display_email: http://tadpol.org/contact.html
+site_name: 
+site_description: 

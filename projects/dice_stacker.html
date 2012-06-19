@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Dice Stacker</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2007-06-27T10:23:16-05:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+<link href="../images/tadpol_icon_57.png" rel="apple-touch-icon" type="image/png" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Dice Stacker</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p>A robot that will stack a tower of dice.
+<img src="images/NXT-DS-v1.jpg" height="120" width="160" /></p>
+
+<p>Original plan was to have the arm carry all of the dice with it and place them. Similar to an applicator tip in a machine like <a href="http://reprap.org/">RepRap</a>.  Played with a lot of ideas, but they all ended up either using too many parts, or being too heavy, or usually, both.  So I changed my plan to work more like a Pick-n-Place, which makes it just a claw.  Then needed to make a small claw that would sufficiently grab dice and carry them.
+<img src="images/NXT-DS-claw-v1.jpg" height="120" width="160" /></p>
+
+<p>What I came up with works well enough.  There is however a bit of slack from the totaled gap space of all the gears between the pincers and the motor.  I&#8217;ve been able to deal with it so far just by keeping it in mind while writing programs.  (<small>mostly by putting in enough extra degrees.</small>) Though I&#8217;m curious if there is a design that will work with less floating space.</p>
+
+<p>The other challenge was that to stack dice I needed to have near, if not complete, vertical motion of the claw tip.  Otherwise the dice wouldn&#8217;t be placed on top of each other and the tower would fall.  Also would be nice to have lots of vertical range.  After messing around with lots of unusable ideas, then scouring the web, I came across a model of a <a href="http://www.telepresence.strath.ac.uk/jen/lego/skidsteer.htm">skid-loader</a>.  Which had the linkages for the near vertical motion I was after.  So copied and tweaked it, and built it in.
+<img src="images/NXT-DS-vert-v1.jpg" height="120" width="160" /></p>
+
+<p>I would also have liked to get near horizontal motion as well, but I was getting impatient here.  So just used the base from the RoboArm T-56 that came with the NXT.  This works well enough, although due to the way it is built, turning the arm also raises or lowers the tip a bit.  After a bit of testing, I figured that about four seconds of rotation equaled about one rotation of lift.  Also, rotating right produced lift, while rotating left lowers the tip.</p>
+
+<p>After many trials and errors, I came up with a program that worked for a tower of two dice.  Then after a bunch more runs, I got one captured in quicktime.  There is a lot of float in the system, which would be less noticeable if I had bigger dice. (<small>They&#8217;re 7/16 of an inch to a side.</small>)  So accuracy is a bit of luck and repetition.</p>
+
+<p><a href="images/side_view.mov">In action here.</a></p>
+
+<p>The program: <a href="archives/NXT-DS-v2.zip"><img src="images/NXT-DS-prgm-v2.png" height="44" width="287" /></a></p>
+
+<p><strong>Update 2007-06-28T18:01:01-05:00</strong>: Improved the program to work with towers of different heights.  You still need to edit the program to tell it how high the tower is, but there is only one spot where you need to do that.</p>
+
+<p><strong>Update 2007-06-29T18:11:56-05:00</strong>: Changed the <a href="images/NXT-DS-claw-v2.jpg">pincer design</a> to use the lever idea instead of gears.  Nearly no float in this design; works much better than with gears.  I don&#8217;t have to do any compensation in the code for the pincers now.</p>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="../bog/index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="../bog/archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2007-2009 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

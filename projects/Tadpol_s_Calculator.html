@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Tadpol's Calculator v3</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2009-01-24T09:07:09-06:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+<link href="../images/tadpol_icon_57.png" rel="apple-touch-icon" type="image/png" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Tadpol's Calculator v3</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+<p>There is a saying about dog food and eating it.  So after a bit I started to find my little calculator lacking.  Quite severely in some places; so I gave it a redesign.  Twice.</p>
+
+<p>A quick person will note that this is version 3 and the previous was version 1, thus skipping version 2.  There was a version 2.  It had the same GUI as version 1, but it was a full out RPN.  There were multiple stacks that were named.  Those stacks were also little programs; letting you program the calculator.  It was all very nifty by design.  It was utterly worthless to use.</p>
+
+<p>Version 2 was a key lesson for designing version 3.</p>
+
+<p>As a programmer, the stacks are a very neat concept.  For doing little quick bits of math, they interfere.  The real reason for the stack though, was that your basic calculator only has one extra bit of memory.  I find that too limiting.  I played around and tested a few things and found that I never really used more than three or four memory cells.  So version 3 has five memory cells.</p>
+
+<p>The ability to write little programs for the calc was a neat idea that I never used.  TadpolCalc is written in TCL, it is far easier to just add functions in TCL that any little toy language.  Never mind the detail that it was a feature that never got used.  Version 3 doesn&#8217;t try to have its own programming language.</p>
+
+<p>Version 1 and 2 had broken fixed number modes.  That bug is squished in version 3.</p>
+
+<p>There were a lot of funny key collisions in version 1.  Try entering a hexadecimal number in all caps.  Goes ok until you get to a &#8216;B&#8217;.  Version 3 isn&#8217;t quite as crazy about single key shortcuts.</p>
+
+<p>I aslo finally figured out how to convert a floating point number into hexadecimal.  I&#8217;m mildly ashamed it took me so long.  IEEE defined how to do this, thus that is the way to do it.  (<small>And that one memory dump with floats in it that I needed to decode also helped push the matter.</small>)  Converting floats to hexadecimal and binary actually works in version 3.</p>
+
+<p>So here is my latest version; something I find useful again.  We&#8217;ll see how this one stands after a bit of time.  </p>
+
+<p>Oh, one thing, Control-? for help. (<small>or on most keyboards, Control-Shift-/</small>)</p>
+
+<p>(<small>and yes, I am in fact finding little things to fix already.</small>)</p>
+
+<p>Screenshots:<br />
+<img src="images/tc-mac-v3.png" height="123" width="349" />&nbsp;&nbsp;
+<!-- img src="/projects/images/tc-win-v3.png" / --></p>
+
+<p>Download:</p>
+
+<ul>
+<li><a href="/projects/archives/tadpolcalc/tadpolcalc-darwin-univ-aqua-v3.zip">Macintosh</a></li>
+<li><a href="/projects/archives/tadpolcalc/tadpolcalc-win32-v3.zip">Windows</a></li>
+<li><a href="/projects/archives/tadpolcalc/tadpolcalc-linux-x86-v3.zip">Linux</a></li>
+<li><a href="/projects/archives/tadpolcalc/tadpolcalc-kit-v3.zip">kit</a></li>
+</ul>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="../bog/index.html">Bog</a></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2009 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

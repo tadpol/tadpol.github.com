@@ -1,0 +1,71 @@
+<!-- define subject "TINI Controlled Fan" -->
+<!-- define created "Sat Jul 26 14:50:43 CDT 2003" -->
+
+<h1>TINI Controlled Fan</h1>
+
+<p>
+Why? I was bored.  Really.  Well, that and I had most of the junk lying
+around.  Just asking to be used.  So I guess that had some relevance as
+well.
+</p><p>
+What? The <a href="http://www.ibutton.com/TINI/index.html">TINI</a> is the 
+brains.  A 
+<a href="http://www.ibutton.com/ibuttons/thermochron.html">Thermochron</a> 
+button records the temp inside the apartment.  X10 controls that window
+fan.  The TINI looks up the outside temp via internet, and if this temp
+is over 60 but less than the inside temp, the window fan is switched on.  Else it is off.
+</p><p>
+That's the idea anyways.  Maybe in the future I'll rig it with a second
+temp sensor to get the actual temp outside my apartment.
+</p><p>
+
+Now this is all good and fine until the first stumbling block.  For a
+computer to X10 interface, all I have is the Firecracker.  This neat
+little block utilizes the DTR and RTS lines to send RF signals to a X10
+base that then sends it over the power lines.  The problem then?
+</p><p>
+The TINI supports four serial lines.  The first two are driven by
+internal UARTs and for simplicity, are only RX/TX lines.  And that
+rather complicates things if you want to use the DTR and RTS lines.
+</p><p>
+Good thing is that the other two serial lines will have DTR and RTS
+lines.  Too bad that they also require a bunch of other parts.  Well,
+its not that bad.  Its just a bunch of stuff that I have to buy, then
+sodder. (well, I won't sodder these.  Lots of surface mount stuff.  Got
+my brother to do it, since at his work they have spiffy nice equipment
+that makes it a snap to do.)
+</p>
+<p>I've got some pictures of the TINI main board before and after we
+added the extra parts.  We added a lot more than just what was needed. 
+This is because <a href="http://www.digikey.com/">Digi Key</a> has a minimum order of $25, and the electronic parts were really cheep.
+</p>
+<p>Before:
+<a href="images/tini-before-front.jpg">Front
+<img align=top src="tini-before-front-thumb.jpg" alt="tini-before-front-thumb"></a>
+<a href="images/tini-before-back.jpg">Back
+<img align=top  src="images/tini-before-back-thumb.jpg" alt="tini-before-back-thumb"></a>
+<br>
+After:
+<a href="images/tini-after-front.jpg">Front
+<img align=top  src="images/tini-after-front-thumb.jpg" alt="tini-after-front-thumb"></a>
+<a href="images/tini-after-back.jpg">Back
+<img align=top  src="images/tini-after-back-thumb.jpg" alt="tini-after-back-thumb"></a>
+</p>
+
+<p>As a side note to this adventure. While it is true that java on
+embedded devices is a neat idea and all in theory.  It makes a great
+many things way more difficult than they need to be for a simple application as this.
+</p>
+
+<p>I've got all the various parts of code done.  I can turn the fan on
+and off.  Get the temp from <a href="http://weather.noaa.gov/">NOAA</a>,
+and the Thermochron button.  Just got to roll it all together.  Just need to
+stop playing with the web site stuff and get back to playing with this.
+</p>
+
+<p><b>Update [<small>Tue Sep 9 17:41:23 CDT 2003</small>]:</b>
+bleh.  The code to fetch the data from NOAA via ftp gags once and a
+while.  And after running long enough, it will splatter all of the tcp/ip stuff on the TINI.
+<br>This is throwing a bit of a wrench into the works.
+</p>
+

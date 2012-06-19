@@ -1,0 +1,20 @@
+<!-- define subject "Extractor" -->
+<!-- define created "Tue Feb 11 13:31:56 CST 2003" -->
+    <p>
+    A perl/Tk script that tries to emulate the expander tool in BeOS.
+    Basically just a simple front end to the standard tools.
+    It is was intended to
+    be ran from other interface tools like file managers. (I used it with <a
+    href="http://www.kaisersite.de/dfm/">dfm</a>)
+    It does not support making or editing archives, only listing the contents
+    and extracting them.
+    </p>
+<p>Downloads:
+<ul>
+    <li><a href="archives/Extractor.pl.gz">0.1</a></li>
+</ul></p>
+<p>Screenshots:
+<ul>
+    <li><a href="images/extractor.screen.png">Extractor</a></li>
+</ul></p>
+

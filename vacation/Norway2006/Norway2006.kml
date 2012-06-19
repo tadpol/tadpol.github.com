@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+  <Folder>
+    <name>Norway 2006</name>
+    <description></description>
+    <Placemark>
+      <name>Day 1</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1306.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day1.html"&gt;Day 1&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1306.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.7643059624566,59.9038979763455</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 1</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1308.jpg" width="240" height="320" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day1.html"&gt;Day 1&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1308.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.7360239664714,59.908983968099</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 1</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1310.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day1.html"&gt;Day 1&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1310.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.7362599690755,59.9088979763455</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 2</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1317.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day2.html"&gt;Day 2&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1317.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>30.0135759819878,69.6610879855686</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 2</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1320.jpg" width="240" height="320" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day2.html"&gt;Day 2&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1320.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>30.1200269911024,69.6649499511719</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 3</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1322.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day3.html"&gt;Day 3&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1322.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>30.0721119520399,69.7287009684245</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 3</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1325.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day3.html"&gt;Day 3&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1325.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>31.0947849527995,70.3723879665799</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 3</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1329.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day3.html"&gt;Day 3&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1329.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>31.0948489718967,70.3724099392361</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 4</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1335.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day4.html"&gt;Day 4&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1335.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>25.7834099663628,71.1708069525825</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 4</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1341.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day4.html"&gt;Day 4&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1341.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>25.4608149549696,70.6735899522569</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 4</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1346.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day4.html"&gt;Day 4&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1346.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>22.322136976454,70.262288953993</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 5</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1358.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day5.html"&gt;Day 5&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1358.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>15.7015439860026,68.9754719373915</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 5</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1372.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day5.html"&gt;Day 5&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1372.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>14.9115159776476,68.5711239963108</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 5</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1386.jpg" width="240" height="320" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day5.html"&gt;Day 5&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1386.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>14.9651379394531,68.3638219536675</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 5</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1387.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day5.html"&gt;Day 5&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1387.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>14.9421999782986,68.3638639322917</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 5</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1393.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day5.html"&gt;Day 5&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1393.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>14.2077039930556,68.1555529785156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 5</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1395.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day5.html"&gt;Day 5&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1395.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>14.2077039930556,68.1555529785156</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 6</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1407.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day6.html"&gt;Day 6&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1407.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>13.0084349907769,66.2007589382596</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 6</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1427.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day6.html"&gt;Day 6&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1427.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>12.0477319335938,65.3648969862196</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 7</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1434.jpg" width="240" height="320" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day7.html"&gt;Day 7&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1434.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.39654296875,63.427826944987</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 7</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1446.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day7.html"&gt;Day 7&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1446.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>7.72956793891059,63.1073999701606</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 8</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1455.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day8.html"&gt;Day 8&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1455.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>4.79029696994358,61.1989119466146</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 8</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1457.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day8.html"&gt;Day 8&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1457.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>5.30553799099392,60.3936269802517</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 8</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1458.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day8.html"&gt;Day 8&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1458.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>5.30568793402778,60.3936699761285</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 9</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1459.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day9.html"&gt;Day 9&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1459.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>5.34278896755642,60.3944209798177</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 9</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1462.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day9.html"&gt;Day 9&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1462.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>5.34328199598524,60.3942059326172</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 9</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1464.jpg" width="240" height="320" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day9.html"&gt;Day 9&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1464.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>5.32461398654514,60.3987769911024</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 10</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1466.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day10.html"&gt;Day 10&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1466.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.7049969482422,59.925827975803</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 10</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1474.jpg" width="240" height="320" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day10.html"&gt;Day 10&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1474.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.6649569363064,59.9648169623481</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 11</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1479.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day11.html"&gt;Day 11&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1479.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.6849769422743,59.9045209418403</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Day 11</name>
+      <description>&lt;img src="http://tadpol.org/vacation/Norway2006/images/IMG_1482.jpg" width="320" height="240" /&gt;&lt;br&gt;&lt;a href="http://tadpol.org/vacation/Norway2006/day11.html"&gt;Day 11&lt;/a&gt;</description>
+      <Style>
+        <IconStyle>
+          <Icon>
+            <href>http://tadpol.org/vacation/Norway2006/images/IMG_1482.jpg</href>
+          </Icon>
+        </IconStyle>
+      </Style>
+      <Point>
+        <coordinates>10.6983659532335,59.903254937066</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+</kml>

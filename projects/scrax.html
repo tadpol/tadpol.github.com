@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Scrax</title>
+<meta name="editor" content="vim and/or bbedit" />
+<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
+<meta name="Content-Language" content="en-US" />
+<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+<meta name="created" content="2005-08-11T09:36:56-05:00" />
+<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
+<link href="../images/tadpol.ico" rel="icon" type="image/ico" />
+
+<link href="../s/thickbox.css" rel="Stylesheet" media="screen" type="text/css" />
+<link href="../tadpol.css" rel="Stylesheet" media="screen" type="text/css" />
+<!--[if IE]>
+<link href="/iekludging.css" media="screen" rel="Stylesheet" type="text/css" />
+<![endif]-->
+<link href="../print.css" rel="Stylesheet" media="print" type="text/css" />
+<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
+
+<script src="../jquery-1.1.pack.js" type="text/javascript"></script>
+<script src="../s/thickbox-compressed.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="header">
+<h1>Scrax</h1>
+</div>
+<div id="corner">
+<a href="../index.html"><img src="../images/tadpollogo.png" alt="Tadpol Logo" /></a>
+</div>
+
+<div id="content">
+
+<h1>Scrax</h1>
+
+<p>Scrax is a scrapper designed for converting html page archive data from web comics into RSS feeds.  This is quite useful for tracking many web comics at once, especially those with odd update schedules.  It can be used for other similar things too though.</p>
+
+<p>Scrax has two parts.  First, a module that provides a few common functions that should work for a large majority of sites.  Second, a set of scripts that use this module.  These scripts look at specific web pages, and parse out links and produce RSS.</p>
+
+<p>The module and the scripts that use it are now distributed as seperate archives.  Mostly because the scrax module is now a ruby gem.</p>
+
+<p><a href="http://tadpol.org/projects/htmltorss.html">HTMLtoRSS</a> was my first attempt at this.  Scrax is a lot cleaner I think.  But it isn&#8217;t quite as generic.</p>
+
+<h2>Install</h2>
+
+<p>First install the module. The best way is to use the gem, otherwise unpack the 
+zip somewhere, and make sure that is in the include path for ruby.</p>
+
+<p>Second, if you want to use the scrapers I wrote, unpack the Comics zip somewhere.  They should just run from where ever once the scrax module is properly installed.</p>
+
+<h2>Upgrade Notes</h2>
+
+<p>This is a half version of sorts.  I&#8217;m in the midst of reworking most of the guts.  I think this is a fairly stable turning point where I [hopfully] haven&#8217;t broken anything, but still am bringing the new stuff.  Mostly what is happening is that I&#8217;m trying to make the Scrax API more flexible.  Personally, I would like to be able to build quick-ish one-shot styled Scraxes in irb, and the previous API made that painful.  I&#8217;m not there yet, but I think I&#8217;m moving in the right direction.</p>
+
+<h2>Usage</h2>
+
+<p>Scrax scripts output RSS2.0, and are intended to be used within something like <a href="http://ranchero.com/netnewswire/">NetNewsWire2.0</a>.  Use the included &#8216;runnable.rb&#8217; script to set the execution bit on the comic specific scripts.  Then add the scripts with &#8216;File > New Special Subscription > Script&#8230;&#8217;.  You then need to open the info window for the new script, and under &#8216;Script Settings&#8217; change the type to &#8216;Shell&#8217;.</p>
+
+<p>If a scrax script is acting funny, the first thing to try is deleting its saved state.  On Macs, delete files in: <code>~/Library/Application Support/Scrax</code> On Unixes: <code>~/.Scrax/</code></p>
+
+<h2>API Documentation</h2>
+
+<p>Installing via gem usually does this automatically for you.  Otherwise you can just run <code>rdoc scrax/*.rb</code> to generate the API documentation.</p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li><a href="http://ruby-lang.org/">Ruby 1.8</a></li>
+<li><a href="http://rubyforge.org/projects/htmltokenizer/">htmltokenizer 1.0</a></li>
+<li><a href="http://builder.rubyforge.org/">builder 2.0</a></li>
+<li><a href="http://code.whytheluckystiff.net/hpricot/">Hpricot 0.4</a>  Scrax doesn&#8217;t require Hpricot, but a couple of the comic scraping scripts do.  Future versions of Scrax will most likely require Hpricot.</li>
+</ul>
+
+<h2>Downloads</h2>
+<ul>
+<li><a href="archives/scrax-0.14.gem">0.14 gem</a></li>
+<li><a href="archives/scrax-0.14.zip">0.14 zip</a></li>
+<li><a href="archives/Comics-0.14.zip">0.14 Comic scrappers</a></li>
+</ul>
+<h2>Changes since Release 0.13</h2>
+<ul>
+  <li>Start of API redesign.</li>
+  <li>Start using the better date finding/parsing code.</li>
+  <li>Swtich catharsiscomic to custom work, need to get around date format flipping.</li>
+  <li>Rebuild countyoursheep scrapper with new API design.</li>
+  <li>Oots changed the way they do things.</li>
+  <li>New comics Castlevania RPG, SkyFall, and Friendly Hostility</li>
+  <li>Moved out some broken scrappers I don't feel like fixing.</li>
+  <li>Added atom output, not used or accessible at the momment.</li>
+</ul>
+</div>
+
+<div id="sidebar">
+	<ul>
+	  <li><a href="../bog/index.html">Blog</a>&nbsp;&nbsp;&nbsp;<small><a href="../bog/archive.html">[all]</a></small></li>
+	  <li><a href="../stories/index.html">Stories</a></li>
+	  <li><a href="../recipes/index.html">Recipes</a></li>
+	  <li><a href="index.html">Projects</a></li>
+	  <li><a href="../Links/index.html">Link Farm</a></li>
+	  <li><a href="../vacation/index.html">Vacations</a></li>
+	  <li><a href="../contact.html">Contact</a></li>
+	</ul>
+</div>
+
+<div id="footer">
+<div id="wit">If you can shape it in your mind,<br />
+you will find it in your life.</div>
+Copyright &copy;2005-2008 by Michael Conrad Tadpol Tilstra.
+All rights reserved.
+<br />
+Check: 
+<a href="http://validator.w3.org/check/referer">html</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
+</div>
+
+</body>
+</html>

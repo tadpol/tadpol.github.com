@@ -1,0 +1,76 @@
+<!-- define subject "Contacting Me" -->
+<!-- define created "Sat Mar 27 10:30:32 CST 2004" -->
+
+<div style="float: right; text-align: right; " >
+<img src="images/me_and_new_shelves.jpg" alt="Me and my new book shelves" height="120" width="293" /><br />
+<img src="images/me_new_glasses.png" alt="Me with a new pair of glasses" height="128" width="128" />
+</div>
+
+
+<p>
+So you&#8217;ve decided that you need to get ahold of me.
+Neat.
+</p><p>
+Well, I have collected quite a few different methods available for just this purpose.
+By far the most reliable method is to 
+<a id="emaillink" href="">send email</a>.
+<script type="text/javascript">
+<!--
+        var data=new Array(
+                93,81,89,92,68,95,10,68,
+                81,84,64,95,92,112,68,81,
+                84,64,95,92,30,95,66,87,
+                48,48,92,89,94,91,48
+        );
+        var idx=0, n=data[data.length-1];
+        var foo="";
+        while( data[idx]!=n ) {
+                foo += String.fromCharCode(data[idx++]^n);
+        }
+        $("#emaillink").attr('href', foo);
+-->
+</script>
+</p>
+
+
+<p>If you&#8217;re seeking a more interactive interface, you can try to find me on one
+of the IM systems.  Google Talk is my preferred IM interface, so try that first. 
+(<small>I don't remember when I last logged into some of these…</small>)
+</p>
+
+<p>
+<table>
+<tr><td><a href="http://www.google.com/talk/">Google Talk</a></td><td>:</td><td>tadpol</td></tr>
+<tr><td><a href="http://messenger.yahoo.com/">Yahoo</a></td><td>:</td><td>realtadpol</td></tr>
+<tr><td><a href="http://www.aim.com/">AIM</a></td><td>:</td><td>realtadpol</td></tr>
+<tr><td><a href="http://www.jabber.org/">Jabber.org</a></td><td>:</td><td>tadpol</td></tr>
+<tr><td><a href="http://www.icq.com/">ICQ</a></td><td>:</td><td>3810810</td></tr>
+<tr><td><a href="http://www.skype.com/">Skype</a></td><td>:</td><td>mctilstra</td></tr>
+</table>
+</p>
+
+<p>And then there are a bunch of sites that know way too much about me:</p>
+<ul>
+<li><a href="http://www.linkedin.com/in/tadpol" >LinkedIn<a></li>
+<li><a href="http://twitter.com/tadpol">Twitter</a></li>
+<li><a href="http://www.facebook.com/tadpol">Facebook</a></li>
+<li><a href="http://www.librarything.com/catalog/tadpol">LibraryThing</a></li>
+</ul>
+
+<!--
+The man you sent out to die is dead
+I am not him.
+I took his body for my own
+I took his memories with his body
+and with those came his rage
+his anger.
+I remember who cast him out
+I remember what he wanted to do
+His rage eats my existance
+I must clean his rage
+I must clear his rage.
+-->
+<p>
+Of course, if you know me in the real world, you can find me there too.
+If not, well the methods above will have to do.
+</p>

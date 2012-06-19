@@ -1,0 +1,7 @@
+LEGO Ice
+#created Mon Oct 23 18:43:57 CDT 2006
+
+Because it was just too neat not to have, that's all.
+
+<img src="../images/lego%20ice%20cubes.jpg" alt="Lego Ice Cubes"/>
+<img src="../images/lego%20ice%20tray.jpg" alt="Lego Ice Tray"/>

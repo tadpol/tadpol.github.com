@@ -1,0 +1,62 @@
+<!-- define subject "Rambling about NetNewsWire" -->
+<!-- define tagline "A bit of {Rambling} about what is comming in NetNewsWire" -->
+<!-- define created "Tue Mar 30 18:46:02 CST 2004" -->
+
+<p>Read through the <a
+href="http://inessential.com/2004/03/26.php">teasers</a> that Brent
+dropped on the new <a
+href="http://ranchero.com/netnewswire/">NetNewsWire</a>, looking neat. 
+Though I cannot say I'm all that excited about the Browsing in Place
+thing.  </p>
+
+<p>Even though I do fall into the "Do one thing and do it well" camp,
+that's not where I'm taking issue.  My concern is that I look at the
+tiny little viewing area in NNW that each post is in, then I look over
+at the huge viewing area that my web browser gives me.  Then I look at
+most blogs' web page verses the rawer data they give to rss.  And I just
+have to wonder, where are all of the side bars gonna go?(<small>Answer
+is nowhere, they'll just squish the text you want to read into a column
+of words.</small>)</p>
+
+<p>There isn't exactly a lot of room to work with there.  (<small>And
+no, making the NNW window bigger isn't really an option.  Apps that have
+windows that take up the whole screen are bad in my little
+world.</small>)</p>
+
+<p>The weblog editor updates are of some interest though.  I've been
+doing a lot of work lately to stream line the way my site builds. 
+Mostly trying to remove all of the work in adding a page. 
+(<small>Easier added pages make for easier posts, and I'm trying to be
+more, umm, bloggish?</small>)  And being able to make new entries
+without having to do a lot of html tagging by hand would be a nice plus.</p>
+
+<p>Currently, I'm still using <a
+href="http://www.barebones.com/">BBEdit</a>, then making use of <a
+href="http://daringfireball.net/projects/markdown/">Markdown</a> to pull
+it up into full html.  But there are a lot of -isms around here that
+just don't fit well with text2html processors.  The biggest is my making
+text in parentheses smaller.  Now I could hack Markdown I suppose, but
+really, it would be a lot cleaner mentally to write text, select text,
+make text smaller.  (<small>Although, having it happen automatically
+might be easier, though it may end up being unexpected at
+times.</small>)  This nice thing about Markdown, it leaves all of
+my hand included html alone.</p>
+
+<p>The big downer to any weblog editor is that I'm running custom code
+to build things.  Just meaning that if I do find one I like, I'll
+still have to write up some scripts to make it actually work.  Oh well,
+my own darn fault.</p>
+
+<p>Anyways, back to NNW.  I'm a little disappointed he didn't say
+anything about the feature that I <em>really</em> want.  And that's
+being able to share/transfer the list of read posts between home and
+work.  I follow a couple of blogs at work that I don't at home, and a
+bunch at home that I don't at work, and then a handful that get peeked
+at from both.  Ending up reading some posts twice is just kind of
+irritating.  (<small>Mostly because I'm also a developer, so I know
+there has to be a solution.  I've tried to hack it too, and let me tell
+you, NNW <em>really</em> gets unhappy when you start messing with the
+underlying sqlite database.</small>)  Making use of MacOS's built in
+spell checker would be quite swell too.</p>
+
+<p>I guess I'll just have to wait and see.</p>

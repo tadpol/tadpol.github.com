@@ -1,0 +1,41 @@
+
+<!-- define tagline "{Stitched} in Space." -->
+<!-- define subject "Stitch in Space" -->
+<!-- define created "Sat Aug 10 17:35:50 CDT 2002" -->
+
+<p>
+So I picked up a digital camera last weekend.  And I did kind of know
+this, but I didn't get around to playing with it much until this
+weekend.  Yeah I did a little last weekend, but it pretty much remained
+untouched durring the week.  Anyways, that's not why this is here.
+</p><p>
+So the camera has a mode called Stitch Assist.  Mostly just being a
+slight variation on the view screen to assist you in making
+panoramic views.  You take a bunch of shots, then upload, then open in a
+supplied helper program to assemble them.  Quite neat.
+</p><p>
+So I did this quick, and learned a lesson.  There is a reason for tripods.
+<img src="apartment_panorama_first.png">
+</p><p>
+I don't own a tripod, so I make-shifted a pile of things, and then got 
+this much better view.
+<img src="apartment_panorama_second.png">
+</p><p>
+Even neater is that you can save quicktimeVR files!
+</p>
+
+<object CLASSID="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" WIDTH="400" HEIGHT="300" CODEBASE="http://www.apple.com/qtactivex/qtplugin.cab">
+<param name="AUTOPLAY" VALUE="true">
+<param name="CONTROLLER" VALUE="TRUE">
+<param name="pluginspage" VALUE="http://www.apple.com/quicktime/download/indext.html">
+<param name="target" VALUE="myself">
+<param name="type" VALUE="video/quicktime">
+<param name="SRC" VALUE="../moovs/tadpolatp.mov">
+<embed width="400" height="316" 
+       src="../moovs/tadpolatp.mov" 
+       AUTOPLAY=TRUE controller="TRUE" 
+       border="0" KIOSKMODE="TRUE" 
+       pluginspage="http://www.apple.com/quicktime/download/indext.html" 
+       target="myself">
+</object>
+

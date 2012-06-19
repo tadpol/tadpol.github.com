@@ -1,0 +1,242 @@
+﻿/* tadpol Screen Styles 
+ * Copyright 2007-2009 Michael Conrad Tadpol Tilstra
+*/
+body {
+	color: black;
+	background-color: #556b2f; /* darkolivegreen */
+	background: url(images/bg.png) ;
+}
+div#header {
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 170px;				/* v-line */
+	height: 150px;				/* h-line */
+    margin: 0;
+    padding: 0;
+	/*border: thin solid;*/
+}
+div#header h1 {
+    position: absolute;
+    left: 20px;
+    right: auto;
+    bottom: 0;
+    top: auto;
+    margin: 4px;
+    padding: 0;
+    
+    color: black;
+/*    background: #556b2f;*/
+}
+div#content {
+	margin-top: 160px;			/* h-line + 10 */
+	margin-right: 180px;		/* v-line + 10 */
+	margin-left: 1em;
+	border: thin solid;
+	padding: 4px;
+
+	color: black;
+	background-color: #EEEEE0;
+}
+div#corner {
+    position: absolute;
+    width: 170px; 				/* v-line */
+    height: 150px;				/* h-line */
+    top: 0; 
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+div#sidebar {
+    position: absolute;
+    width: 170px;				/* v-line */
+    top: 150px;					/* h-line */
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+    font-size: 90%;
+    /*border: solid thin;*/
+}
+div#sidebar ul {
+    list-style-type: none;
+    margin-top: 1px;
+    padding-left: 1em;
+
+    color: black;
+/*    background: #556b2f;*/
+}
+div#sidebar ul li:before {
+	display: marker;
+	content: "➠ ";
+	text-align: center;
+}
+div#footer {
+	margin-right: 180px;		/* v-line + 10 */
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-size: 50%;
+	color: black;
+/*    background: #556b2f;*/
+}
+div#footer div#wit {
+	float: right;
+	text-align: right;
+}
+
+a:link {
+	text-decoration: underline;
+	border: none;
+	color: rgb(128,0,64);
+}
+a:visited { color: rgb(64,0,128); }
+a:hover { color: rgb(0,0,255); }
+
+div#sidebar a { text-decoration: none; color: black; }
+div#sidebar a:hover { color: blue; }
+div#footer a { text-decoration: none; color: black; }
+
+
+/* why? */
+form, div { padding: 0; margin: 0; }
+p { margin: 0 0 1em 0; padding: 0; }
+img { border: 0; }
+
+/*****************************************************************************/
+div.snippet {
+  	margin: 0 0 20px 5px;
+	border-bottom: 1px dashed #9a9a9b;
+	padding-bottom: 10px;
+}
+	
+div.snippet h2 {
+	font: normal 140%/1.3em serif;
+}
+	
+div.snippet h2 a {
+  	color: black;
+	text-decoration: none;
+    border-right: none;
+    border-top: none; 
+    border-left: none;
+  	border-bottom: 1px dotted #9a9a9b;
+}
+
+div.snippet div.dates {
+	font-size: 60%;
+	color: grey;
+	text-align: right;
+}
+
+div.snippet div.dates span.created { display: none; }
+
+/*****************************************************************************/
+div#Fuse-Box-Dwarf {
+	font-size: 60%;
+	text-align: right;
+	color: #b2b26b;
+}
+
+/*****************************************************************************/
+/* ingredient lists for recipies. */
+table.recipe {
+	border-collapse: collapse;
+	border: hidden;
+	margin: 1em;
+}
+table.recipe tr:first-child {
+    border-bottom: double medium; 
+    border-right: none;
+    border-top: none; 
+    border-left: none;
+	font-weight:bold;
+}
+table.recipe td { padding-right: 1em; }
+table.recipe tr td:first-child {text-align: right;}
+
+/*****************************************************************************/
+#LinkFarm div.occontrol {
+	font-size: 70%;
+}
+#LinkFarm a {
+	text-decoration: underline;
+}
+#LinkFarm ul {
+    list-style-type: none;
+    padding: 0.25em;
+}
+#LinkFarm li {
+	padding-left: 1em;
+}
+
+/*****************************************************************************/
+/* Make all tables of books look same and sane. */
+table.booktable {
+    margin: 2px;
+    border: solid medium black;
+    border-collapse: collapse;
+}
+
+table.booktable th {
+    border-bottom: solid thin black;
+    text-align: left;
+}
+
+table.booktable th a {
+	color:#000;
+	font-weight:bold;
+	text-indent:20px;
+	text-decoration:none;
+}
+table.booktable th a:hover { text-decoration: underline; }
+
+table.booktable td {
+    padding: 0.5em;
+}
+
+table.booktable td img {
+    float: right;
+}
+
+/*****************************************************************************/
+/* 	for badging of RSS feeds
+	Taken then tweaked from: http://kentbrewster.com/badger
+*/
+dl.KENTBREW {
+	margin: 2px;
+    border: solid medium black;
+    overflow: hidden;
+}
+dl.KENTBREW .hd {
+    border-bottom: solid thin black;
+    padding:3px;
+}
+dl.KENTBREW .hd a {
+	color:#000;
+	font-weight:bold;
+	text-indent:20px;
+	text-decoration:none;
+}
+dl.KENTBREW .hd a:hover { text-decoration: underline; }
+dl.KENTBREW .bd { margin:0; padding:0; font-size:92%; }
+dl.KENTBREW .bd.hidden { display:none; }
+dl.KENTBREW .bd ul { margin:0; padding:5px; list-style:none; }
+dl.KENTBREW .bd ul li {
+	/*white-space:nowrap;*/
+	margin:0;
+	padding:0;
+/*	padding-left: 17px;
+	background: url(images/arrow.png) 0 50% no-repeat;
+*/
+}
+dl.KENTBREW .bd ul li:before {
+    display: marker;
+    content: "➠ ";
+    text-align: center;
+}
+dl.KENTBREW .ft {
+    text-align:right;
+    border-top:1px solid black;
+    padding:0 5px;
+    font-size: 60%;
+}
