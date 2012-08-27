@@ -12,13 +12,11 @@
 <link href="images/tadpol.ico" rel="icon" type="image/ico" />
 <link href="images/tadpol_icon_57.png" rel="apple-touch-icon" type="image/png" />
 
-<link href="s/thickbox.css" rel="Stylesheet" type="text/css" media="screen" />
 <link href="tadpol.css" rel="Stylesheet" type="text/css" media="screen" />
 <link href="print.css" rel="Stylesheet" type="text/css" media="print" />
 <link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
 
 <script src="jquery-1.1.pack.js" type="text/javascript"></script>
-<script src="s/thickbox-compressed.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -91,26 +89,6 @@ We can <a href="projects/Tadpol_s_Calculator.html">rebuild</a> it; make it <a hr
 </dd>
 </dl>
 
-<dl class="KENTBREW">
-	<dt class="hd">
-	<a href="http://twitter.com/tadpol">Some Things Babbled…</a>
-	</dt>
-	<dd class="bd"><ul id="twitter_update_list"></ul></dd>
-</dl>
-
-
-
-
-
-<dl class="KENTBREW" id="delicious-list">
-	<dt class="hd">
-	<a href="http://del.icio.us/tadpol">Some Sites Visited…</a>
-	</dt>
-	<dd class="bd" id="delicious-posts-tadpol"></dd>
-</dl>
-
-
-
 
 <!-- because i think its funny for this to randomly place itself on the page. -->
 <div id="Fuse-Box-Dwarf">Dreeb! Dreeb! I am a Home Page Virus! Copy me into your home page!</div>
@@ -179,33 +157,14 @@ Check:
 <!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
 </div>
 
-<script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script><script src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=tadpol&amp;count=3&amp;include_rts=true&amp;callback=twitterCallback2" type="text/javascript"></script><script type="text/javascript">
-function deliciousCallback(posts) {
-	var ul = document.createElement('ul')
-	for (var i=0, post; post = posts[i]; i++) {
-        var li = document.createElement('li')
-        var a = document.createElement('a')
-        var te = document.createElement('span')
-        li.setAttribute('class', 'delicious-post')
-        a.setAttribute('href', post.u)
-        a.appendChild(document.createTextNode(post.d))
-        li.appendChild(a)
-		if(post.n) {
-			li.appendChild(document.createTextNode(' '))
-			te.appendChild(document.createTextNode(post.n))
-			li.appendChild(te)
-        }
-        ul.appendChild(li)
-	}
-    document.getElementById('delicious-posts-tadpol').appendChild(ul)
-}
-</script><script src="http://feeds.delicious.com/v2/json/tadpol?count=3&amp;callback=deliciousCallback" type="text/javascript"></script><script language="javascript" type="text/javascript">
+<script language="javascript" type="text/javascript">
 $(function(){
     var l = $("#content dl,#content table");
     var r = Math.floor(Math.random()*l.length);
     $("div#Fuse-Box-Dwarf").insertBefore(l[r]);
 });
-</script><script language="javascript" type="text/javascript">
+</script>
+<script language="javascript" type="text/javascript">
 function readbookscallback(booklist, name) {
     var tds = $("table#readbooks td");
     var i = 0;
@@ -225,5 +184,7 @@ function readbookscallback(booklist, name) {
         i++;
     }
 }
-</script><script src="http://www.librarything.com/api_getdata.php?userid=tadpol&max=4&coverheight=72&booksort=entry_REV&callback=readbookscallback"></script></body>
+</script>
+<script src="http://www.librarything.com/api_getdata.php?userid=tadpol&max=4&coverheight=72&booksort=entry_REV&callback=readbookscallback"></script>
+</body>
 </html>
