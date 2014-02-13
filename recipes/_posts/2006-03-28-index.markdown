@@ -1,0 +1,24 @@
+---
+layout: default
+created: "2006-03-28 21:05:33 -0600"
+title: "Recipes"
+date: "2006-03-28 21:05:33 -0600"
+---
+
+
+I've been playing around with recipes more lately. 
+And as such I've come up with a few of my own. 
+I'm also listing some that I've heavily modified.
+
+
+<!--
+Fear the hollow depths of my wells of apathay.  For shall
+there be but a single tiny stone dropped into thier slient gapping
+mouths, the firy rage of my anger shal rush forth and consume the
+lands of your mind as a candle is engulfed by the torrents of a
+tsunami.
+-->
+
+<group_links src="*.{rit,txt,text}"/>
+
+
