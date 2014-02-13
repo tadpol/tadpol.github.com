@@ -1,190 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title>Tadpol&rsquo;s state of Reality</title>
-<meta name="editor" content="vim and/or bbedit" />
-<meta name="Author" content="Michael Conrad Tadpol Tilstra" />
-<meta name="Content-Language" content="en-US" />
-<meta content="text/html; charset=utf-8" http-equiv="content-type" />
-<meta name="created" content="2006-03-18T14:45:46-06:00" />
-<meta name="keywords" content="tadpol, writing, stories, fiction, recipies, food" />
-<link href="images/tadpol.ico" rel="icon" type="image/ico" />
-<link href="images/tadpol_icon_57.png" rel="apple-touch-icon" type="image/png" />
+---
+layout: default
+title: "Tadpol&rsquo;s state of Reality"
+date: Sat Mar 18 14:45:46 CST 2006
+thickbox: true
+---
 
-<link href="tadpol.css" rel="Stylesheet" type="text/css" media="screen" />
-<link href="print.css" rel="Stylesheet" type="text/css" media="print" />
-<link href="http://tadpol.org/feed.atom" title="ATOM" rel="alternate" type="application/atom+xml" />
-
-<script src="jquery-1.1.pack.js" type="text/javascript"></script>
-</head>
-
-<body>
-<div id="header">
-<h1>Tadpol&rsquo;s state of Reality</h1>
-</div>
-<div id="corner">
-<a href="index.html"><img src="images/tadpollogo.png" alt="Tadpol Logo" /></a>
-</div>
-
-<div id="content">
-
-<!-- won't give up
-     it wants me dead
-     god damn this voice inside my head. -->
-
-<h3>A Quick intro...</h3>
-<p>
- Hi hi.  I was given the name Michael, but tend to use Tadpol instead.
+<h3>A Quick intro…</h3>
+<div><p> Hi hi.  I was given the name Michael, but tend to use Tadpol instead.
 (<small>God only knows why.</small>)
 Sometimes I wonder if I should say anything important here.  Other times I think
 it would be best if I said nothing at all.  However, if I am to say nothing at all
 there would not be much point in having a web site.  I like having a web site, so I feel 
 that I must strive to have something to say.  Thus I find that I am often saying nothing,
 but with a great deal many more words than nothing really deserves.
-</p>
-
-<dl class="KENTBREW">
-<dt class="hd"><a href="projects/">Some Things Built…</a></dt>
-<dd class="bd">
-<ul class="timeindex">
-  <li>
-<a href="projects/AvrianJump.html">Assembling</a> ladders in the <a href="projects/AvrianJump.html">web</a>  </li>
-  <li>
-Creating new <a href="projects/tea.html">languages</a> for <a href="projects/tea.html">fun</a> and <a href="projects/tea.html">boredom</a>.  </li>
-  <li>
-We can <a href="projects/Tadpol_s_Calculator.html">rebuild</a> it; make it <a href="projects/Tadpol_s_Calculator.html">better</a>; it is just a <a href="projects/Tadpol_s_Calculator.html">calculator</a>.  </li>
-</ul>
-
-</dd>
-</dl>
-
-<dl class="KENTBREW">
-<dt class="hd"><a href="recipes/">Some Things Ate…</a></dt>
-<dd class="bd">
-<ul class="timeindex">
-  <li>
-<a href="recipes/BasicPesto.html">Basic Pesto</a>  </li>
-  <li>
-<a href="recipes/Honey_Curry_Chicken.html">Honey Curry Chicken</a> with <a href="recipes/Honey_Curry_Chicken.html">Summer Squash</a> and <a href="recipes/Honey_Curry_Chicken.html">Mashed Potatoes</a>  </li>
-  <li>
-<a href="recipes/Garlic_Lime_Chicken.html">Garlic Lime Chicken</a>  </li>
-</ul>
-
-</dd>
-</dl>
-
-<dl class="KENTBREW">
-<dt class="hd"><a href="bog/">Some Things Said…</a></dt>
-<dd class="bd">
-<ul class="timeindex">
-  <li>
-<a href="bog/lifeChange.html">Life</a> is <a href="bog/lifeChange.html">different</a> now  </li>
-  <li>
-<a href="bog/My_Daddy_s_a_Geek.html">My Daddy's a Geek</a>  </li>
-  <li>
-<a href="bog/Simple_Flash_Trick.html">Flashing</a> half way with my <a href="bog/Simple_Flash_Trick.html">finger</a>.  </li>
-</ul>
-
-</dd>
-</dl>
-
-
+</p></div>
 <!-- because i think its funny for this to randomly place itself on the page. -->
 <div id="Fuse-Box-Dwarf">Dreeb! Dreeb! I am a Home Page Virus! Copy me into your home page!</div>
+<script language="javascript" type="text/javascript" >
+$(function(){
+    var l = $("#content div");
+    var r = Math.floor(Math.random()*l.length);
+    $("div#Fuse-Box-Dwarf").insertBefore(l[r]);
+});
+</script>
+
+<h3>Some Things Said…</h3>
+{% for post in site.posts limit:6 %}
+<div class="post excerpt">
+	<a href="{{ post.url }}"><strong>{{ post.title }}</strong></a>
+	{{ post.excerpt | markdownify }}
+</div>
+{% endfor %}
+
+<h3>Links of yore…</h3>
+<p>Things are lightly categorized here.  Go ahead and poke around.</p>
+<ul class=listedcategories>
+	{% for cat in site.categories %}
+	<li><a href="/{{ cat | first }}/index.html">{{ cat | first | capitalize }}</a>
+	{% endfor %}
+
+	<li><a href="recipes/index.html">Recipes</a></li>
+
+	<li><a href="stories/index.html">Stories</a></li>
+	<li><a href="vacation/index.html">Vacations</a></li>
+</ul>
 
 
-
-<!-- http://www.librarything.com/wiki/index.php/LibraryThing_JSON_Books_API -->
-<table class="booktable" id="readbooks">
-<tr><th colspan="2"><a href="http://www.librarything.com/catalog/tadpol">Some Books Read…</a></th></tr>
-<tr><td width="50%"></td> <td></td></tr>
-<tr><td></td> <td></td></tr>
-</table>
-
-
-
-<!-- why do I keep this depressing stuff stashed in comments like this?
-<p>
-I think somewhere along the line<br>
-I was suppose to care.<br>
-But no matter what you put into this,<br>
-the results are the same; you die.<br>
-There is no where to go <br>
-that you haven't been.<br>
-And no where you've been<br>
-that is worth going to.<br>
-So give it all you got,<br>
-or give it nothing at all.<br>
-I'll see you at the end either way,<br>
-with everyone else and thier friends,<br>
-and with not a thing to claim as our own<br>
-that was worth remembering now or then.
-</p>
--->
 <!-- I miss these, I just don't know where to stick them.
 <li>For the first time in your memory, you're generating your own light.</li>
 <li>If I touch you, will you burn?</li>
 <li><code>sleep `date '+23 %H-3600*60 %M-60*+p' | dc`</code></li>
 <li>I live on Farm 28.</li>
-<li> just so you all know, I'm losing my mind.</li>
-<li>sometimes I bother myself……Usually on weekends.</li>
 -->
 
-</div>
-
-<div id="sidebar">
-	<ul>
-	  <li><a href="bog/index.html">Bog</a></li>
-	  <li><a href="stories/index.html">Stories</a></li>
-	  <li><a href="recipes/index.html">Recipes</a></li>
-	  <li><a href="projects/index.html">Projects</a></li>
-	  <li><a href="Links/index.html">Link Farm</a></li>
-	  <li><a href="vacation/index.html">Vacations</a></li>
-	  <li><a href="contact.html">Contact</a></li>
-	</ul>
-</div>
-
-<div id="footer">
-<div id="wit">If you can shape it in your mind,<br />
-you will find it in your life.</div>
-Copyright &copy;2006-2012 by Michael Conrad Tadpol Tilstra.
-All rights reserved.
-<br />
-Check: 
-<a href="http://validator.w3.org/check/referer">html</a>
-<a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
-<!-- <a href="http://feedvalidator.org/check?url=http://tadpol.org/feed.rss">rss</a> -->
-</div>
-
-<script language="javascript" type="text/javascript">
-$(function(){
-    var l = $("#content dl,#content table");
-    var r = Math.floor(Math.random()*l.length);
-    $("div#Fuse-Box-Dwarf").insertBefore(l[r]);
-});
-</script>
-<script language="javascript" type="text/javascript">
-function readbookscallback(booklist, name) {
-    var tds = $("table#readbooks td");
-    var i = 0;
-    for (var b in booklist.books ) {
-        $(tds[i]).append("<a href=\"http://www.librarything.com/isbn/" + 
-                         booklist.books[b].ISBN_cleaned + "\">" +
-                         "<img src=\"" + booklist.books[b].cover + "\">" +
-                         "<\/a>" +
-                         "<a href=\"http://www.librarything.com/isbn/" + 
-                         booklist.books[b].ISBN_cleaned + "\">" +
-                         booklist.books[b].title + 
-                         "<\/a> by " +
-                         "<a href=\"http://www.librarything.com/author/" +
-                         booklist.books[b].author_code + "\">" +
-                         booklist.books[b].author_fl + "<\/a>"
-                        );
-        i++;
-    }
-}
-</script>
-<script src="http://www.librarything.com/api_getdata.php?userid=tadpol&max=4&coverheight=72&booksort=entry_REV&callback=readbookscallback"></script>
-</body>
-</html>

@@ -1,0 +1,13 @@
+---
+layout: default
+created: "2006-10-23 18:43:57 -0500"
+title: "LEGO Ice"
+date: "2006-10-23 18:43:57 -0500"
+---
+
+
+Because it was just too neat not to have, that's all.
+
+<img src="/images/lego%20ice%20cubes.jpg" alt="Lego Ice Cubes"/>
+<img src="/images/lego%20ice%20tray.jpg" alt="Lego Ice Tray"/>
+

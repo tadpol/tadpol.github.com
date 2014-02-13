@@ -1,0 +1,27 @@
+---
+title: Tadpol's bog
+---
+
+<?xml version="1.0"?>
+<rss version="2.0">
+	<channel>
+		<title>{{ page.title }}</title>
+		<link>http://tadpol.org</link>
+		<description></description>
+		<language>en-us</language>
+		<pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+		<lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+		<generator>jekyll</generator>
+		{% for post in site.posts limit:10 %}
+		<item>
+			<title>{{ post.title }}</title>
+			<link>http://tadpol.org{{ post.url }}</link>
+			<pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+			<guid>http://tadpol.org/{{ post.url }}</guid>
+			<description>{{ post.excerpt }}</description>
+		</item>
+		{% endfor %}
+	</channel>
+</rss>
+
+

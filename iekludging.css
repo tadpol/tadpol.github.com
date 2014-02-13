@@ -1,6 +1,0 @@
-/* hacks to get transparent pngs in IE. */
-div#corner img { display: none; }
-div#corner {
-	_background: none;
-	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, src='/images/tadpollogo.png');
-}

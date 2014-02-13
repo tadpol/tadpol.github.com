@@ -1,0 +1,29 @@
+---
+layout: default
+created: "2005-10-28 14:09:00 -0500"
+title: "extfile"
+date: "2005-10-28 14:09:00 -0500"
+---
+
+
+<p>I have been playing with moving and coping files across platforms a
+bit recently.  Most network file tools don't copy more than just the
+data portion of a file.  This is a rather safe behavior, since most of
+what moves around the net is just the simple data.  But more and more
+systems are adding extended attributes of one kind or another.  Plus the
+mac has this resource fork thing that usually gets skipped.</p>
+
+<p>All of this just brought up the question of how does one know when a
+file has these extra bits.  I poked around a little and didn't see any
+tool that came with the OS. (<small>though I might have just missed it
+too.</small>)  So I wrote this.  </p>
+
+<p>It is very short and sweet.  The archive contains the source and a
+compiled binary.  I made it a command line tool because that was
+quickest, and you can do things like: <code>find ~ -type f -print0 |
+xargs -0 extfile -v</code>  Which gives you a list of every file in your
+home directory that has either extended attributes or resource fork
+data.</p>
+
+<p><a href="archives/extfile.zip">extfile v0.1</a></p>
+

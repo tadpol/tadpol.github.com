@@ -1,7 +1,0 @@
-My Daddy's a Geek
-#created 2009-06-21T13:53:11-05:00
-
-
-<img src="mydaddyisageek.jpg"/>
-<br />
-Its true, I am.

@@ -1,0 +1,19 @@
+---
+layout: default
+created: "2007-05-25 16:21:59 -0500"
+title: "C4[1]"
+date: "2007-05-25 16:21:59 -0500"
+---
+
+
+woo! I'm going to [C4][] this year.
+
+
+
+
+
+
+
+[C4]: http://c4.rentzsch.com/1/
+
+

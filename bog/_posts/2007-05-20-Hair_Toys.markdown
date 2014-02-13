@@ -1,0 +1,18 @@
+---
+layout: default
+created: "2007-05-20 21:28:42 -0500"
+title: "Hair Toys"
+tagline: "{Hair toys}, or be careful what you {ask for}"
+date: "2007-05-20 21:28:42 -0500"
+---
+
+
+I had asked some female friends for hair binders and such.  This is what I got:
+
+<img src="/images/hairclipsfront.jpg" />
+<img src="/images/hairclipsright.jpg" />
+<img src="/images/hairclipsback.jpg" />
+<img src="/images/hairclipsleft.jpg" />
+
+(<small>I got a bunch of useful stuff too, but these are just fun.</small>)
+

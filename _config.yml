@@ -1,0 +1,5 @@
+name: Tadpol&rsquo;s state of Reality
+markdown: redcarpet
+pygment: true
+permalink: /:categories/:year/:month-:day/:title.html
+
