@@ -30,6 +30,28 @@ div#content {
 	color: black;
 	background-color: #EEEEE0;
 }
+#content h2 {
+	margin-bottom: 0px;
+}
+#content .meta {
+	margin-bottom: 2em;
+	font-size: 60%;
+	color: grey;
+}
+#content .excerpt {
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+#content .excerpt p {
+	display: inline;
+}
+#content .excerpt img {
+	vertical-align: top;
+	height: auto;
+	width: auto;
+	max-width: 75px;
+	max-height: 75px;
+}
 div#footer {
 	margin-left: 1em;
 	margin-right: 1em;
@@ -74,21 +96,6 @@ img { border: 0; }
   border: none;
 }
 
-#content h2 {
-	margin-bottom: 0px;
-}
-#content .meta {
-	margin-bottom: 2em;
-	font-size: 60%;
-	color: grey;
-}
-#content .excerpt {
-	margin-left: 2em;
-	margin-bottom: 1em;
-}
-#content .excerpt p {
-	display: inline;
-}
 /*****************************************************************************/
 div#Fuse-Box-Dwarf {
 	font-size: 60%;
