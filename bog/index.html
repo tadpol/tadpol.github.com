@@ -4,10 +4,30 @@ layout: default
 ---
 
 <h2>Leakings of teh Mind</h2>
-
-<ul>
+<ul class="timeindex">
 {% for post in site.categories.bog %}
-<li><a href="{{ post.url }}">{{ post.title }}</a>
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+
+  {% if forloop.first %}
+	<li>{{this_year}}</li>
+  <ul>
+  {% else %}
+      {% if this_year != last_year %}
+      </ul>
+      <li>{{this_year}}</li>
+      <ul>
+      {% endif %}
+  {% endif %}
+
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+
+  {% if forloop.last %}
+    </ul>
+  {% endif %}
+
+  {% capture last_year %}{{ this_year }}{% endcapture %}
 {% endfor %}
 </ul>
 
