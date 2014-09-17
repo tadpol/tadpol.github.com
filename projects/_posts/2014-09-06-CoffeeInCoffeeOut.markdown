@@ -7,11 +7,11 @@ date: "2014-09-17T07:59"
 thickbox: true
 ---
 
-I have this neat coffee mug that uses themal paint to show how full it is.  Its more cute than
-pratical.  Looking at my cup one day while thinking about internets and things, this project
+I have this neat coffee mug that uses thermal paint to show how full it is.  Its more cute than
+practical.  Looking at my cup one day while thinking about internets and things, this project
 formed into my mind along with a question.  Can I tell how full a coffee cup is by just
-temperatues?  Because if I know that, I can figure out how much and how fast I drink coffee.
-Which mean I can figure out how much caffiene I've had, and then how long it sticks around in
+temperatures?  Because if I know that, I can figure out how much and how fast I drink coffee.
+Which mean I can figure out how much caffeine I've had, and then how long it sticks around in
 my body.
 
 I set off to find out.
@@ -39,14 +39,14 @@ First step was doing a bunch of point soldering to make my Linear Temperature Ar
 <a href="/projects/images/CICO-LinearTemperatureArray.jpg" class="thickbox"><img src="/projects/images/CICO-LinearTemperatureArray-thumb.jpg" alt="Six TMP36 point soldered in a row" \></a>
 
 Since I wanted to do some tests on what kind and quality of data I got back I kept the
-[Moteino][] on a breadbaord with way too much wire between that and the sensors.  I will be at
-somepoint here trimming that down and having everything connected to the cup.
+[Moteino][] on a breadboard with way too much wire between that and the sensors.  I will be at
+some point here trimming that down and having everything connected to the cup.
 
 First, I did some tests with the sensors on the outside of the cup.  If this got good enough
 data, that would be cleaner than putting them in the cup. (<small>it didn't.</small>)<br />
 <a href="/projects/images/CICO-SensorsOutside.jpg" class="thickbox"><img src="/projects/images/CICO-SensorsOutside-thumb.jpg" alt="Sensors mounted on the outside of the cup" /></a>
 
-So, some hot glue for strength and heat shrinked.<br />
+So, some hot glue for strength and heat shrunk.<br />
 <a href="/projects/images/CICO-HeatShrunkLTA.jpg" class="thickbox"><img src="/projects/images/CICO-HeatShrunkLTA-thumb.jpg" alt="Sensors wrapped in heat shrink tubing" /></a>
 
 And into the coffee:<br />
@@ -54,6 +54,19 @@ And into the coffee:<br />
 
 
 ## Building the Gateway
+
+- plug stuff in.
+- run code.
+
+## Data
+
+These are plots of the temperature difference between the top-most sensor and the lower
+ones.<br />
+<a href="/projects/images/CICO-data-height-outside.jpg" class="thickbox"><img src="/projects/images/CICO-data-height-outside-thumb.jpg" alt="Plot showing temperature differences with sensors outside the cup" /></a>
+<a href="/projects/images/CICO-data-height-inside.jpg" class="thickbox"><img src="/projects/images/CICO-data-height-inside-thumb.jpg" alt="Plot showing temperature differences with sensors inside the cup" /></a>
+
+There is a clear dip in temperature difference when the sensors are inside the mug.  When on the
+outside, the ceramic interferes too much blurring all the values together.
 
 
 
