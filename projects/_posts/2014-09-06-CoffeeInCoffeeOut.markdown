@@ -52,6 +52,9 @@ So, some hot glue for strength and heat shrunk.<br />
 And into the coffee:<br />
 <a href="/projects/images/CICO-LTAinCoffee.jpg" class="thickbox"><img src="/projects/images/CICO-LTAinCoffee-thumb.jpg" alt="Sensors inside cup with coffee" /></a>
 
+Then finally cut the wires short and soldered them in.
+<a href="/projects/images/CICO-shortenedWires.jpg" class="thickbox"><img src="/projects/images/CICO-shortenedWires-thumb.jpg" alt="Wires cut to
+length and soldered to Moteino" /></a>
 
 ## Building the Gateway
 
