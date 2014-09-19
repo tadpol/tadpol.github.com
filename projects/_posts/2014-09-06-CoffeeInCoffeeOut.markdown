@@ -36,7 +36,7 @@ cloud.  I choose to use [Exosite][] because of employment bias.
 ## Building the Mug Sensors
 
 First step was doing a bunch of point soldering to make my Linear Temperature Array.<br />
-<a href="/projects/images/CICO-LinearTemperatureArray.jpg" class="thickbox"><img src="/projects/images/CICO-LinearTemperatureArray-thumb.jpg" alt="Six TMP36 point soldered in a row" \></a>
+<a href="/projects/images/CICO-LinearTemperatureArray.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-LinearTemperatureArray-thumb.jpg" alt="Six TMP36 point soldered in a row" \></a>
 
 Since I wanted to do some tests on what kind and quality of data I got back I kept the
 [Moteino][] on a breadboard with way too much wire between that and the sensors.  I will be at
@@ -44,16 +44,16 @@ some point here trimming that down and having everything connected to the cup.
 
 First, I did some tests with the sensors on the outside of the cup.  If this got good enough
 data, that would be cleaner than putting them in the cup. (<small>it didn't.</small>)<br />
-<a href="/projects/images/CICO-SensorsOutside.jpg" class="thickbox"><img src="/projects/images/CICO-SensorsOutside-thumb.jpg" alt="Sensors mounted on the outside of the cup" /></a>
+<a href="/projects/images/CICO-SensorsOutside.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-SensorsOutside-thumb.jpg" alt="Sensors mounted on the outside of the cup" /></a>
 
 So, some hot glue for strength and heat shrunk.<br />
-<a href="/projects/images/CICO-HeatShrunkLTA.jpg" class="thickbox"><img src="/projects/images/CICO-HeatShrunkLTA-thumb.jpg" alt="Sensors wrapped in heat shrink tubing" /></a>
+<a href="/projects/images/CICO-HeatShrunkLTA.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-HeatShrunkLTA-thumb.jpg" alt="Sensors wrapped in heat shrink tubing" /></a>
 
 And into the coffee:<br />
-<a href="/projects/images/CICO-LTAinCoffee.jpg" class="thickbox"><img src="/projects/images/CICO-LTAinCoffee-thumb.jpg" alt="Sensors inside cup with coffee" /></a>
+<a href="/projects/images/CICO-LTAinCoffee.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-LTAinCoffee-thumb.jpg" alt="Sensors inside cup with coffee" /></a>
 
 Then finally cut the wires short and soldered them in. <br />
-<a href="/projects/images/CICO-shortenedWires.jpg" class="thickbox"><img src="/projects/images/CICO-shortenedWires-thumb.jpg" alt="Wires cut to
+<a href="/projects/images/CICO-shortenedWires.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-shortenedWires-thumb.jpg" alt="Wires cut to
 length and soldered to Moteino" /></a><br />
 (<small>Still gotta figure out the battery holder…</small>)
 
@@ -61,7 +61,7 @@ length and soldered to Moteino" /></a><br />
 
 This is pretty straightforward; connect the UARTs.
 
-<a href="/projects/images/CICO-firstGateway.jpg" class="thickbox"><img src="/projects/images/CICO-firstGateway-thumb.jpg" alt="Mess of wires for initial gateway" /></a><br />
+<a href="/projects/images/CICO-firstGateway.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-firstGateway-thumb.jpg" alt="Mess of wires for initial gateway" /></a><br />
 (<small>ignore the BLE dongle for now.</small>)
 
 
@@ -75,8 +75,8 @@ much quicker to write a spec file, and have [exoline][] apply it onto a new [CIK
 
 These are plots of the temperature difference between the top-most sensor and the lower
 ones.<br />
-<a href="/projects/images/CICO-data-height-outside.jpg" class="thickbox"><img src="/projects/images/CICO-data-height-outside-thumb.jpg" alt="Plot showing temperature differences with sensors outside the cup" /></a>
-<a href="/projects/images/CICO-data-height-inside.jpg" class="thickbox"><img src="/projects/images/CICO-data-height-inside-thumb.jpg" alt="Plot showing temperature differences with sensors inside the cup" /></a>
+<a href="/projects/images/CICO-data-height-outside.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-data-height-outside-thumb.jpg" alt="Plot showing temperature differences with sensors outside the cup" /></a>
+<a href="/projects/images/CICO-data-height-inside.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-data-height-inside-thumb.jpg" alt="Plot showing temperature differences with sensors inside the cup" /></a>
 
 There is a clear dip in temperature difference when the sensors are inside the mug.  When on the
 outside, the ceramic interferes too much blurring all the values together.
