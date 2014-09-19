@@ -54,7 +54,8 @@ And into the coffee:<br />
 
 Then finally cut the wires short and soldered them in. <br />
 <a href="/projects/images/CICO-shortenedWires.jpg" class="thickbox"><img src="/projects/images/CICO-shortenedWires-thumb.jpg" alt="Wires cut to
-length and soldered to Moteino" /></a>
+length and soldered to Moteino" /></a><br />
+(<small>Still gotta figure out the battery holder…</small>)
 
 ## Building the Gateway
 
