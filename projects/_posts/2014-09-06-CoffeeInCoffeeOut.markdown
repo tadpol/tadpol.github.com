@@ -11,7 +11,7 @@ I have this neat coffee mug that uses thermal paint to show how full it is.  Its
 practical.  Looking at my cup one day while thinking about internets and things, this project
 formed into my mind along with a question.  Can I tell how full a coffee cup is by just
 temperatures?  Because if I know that, I can figure out how much and how fast I drink coffee.
-Which mean I can figure out how much caffeine I've had, and then how long it sticks around in
+Which means I can figure out how much caffeine I've had, and then how long it sticks around in
 my body.
 
 I set off to find out.
@@ -52,14 +52,23 @@ So, some hot glue for strength and heat shrunk.<br />
 And into the coffee:<br />
 <a href="/projects/images/CICO-LTAinCoffee.jpg" class="thickbox"><img src="/projects/images/CICO-LTAinCoffee-thumb.jpg" alt="Sensors inside cup with coffee" /></a>
 
-Then finally cut the wires short and soldered them in.
+Then finally cut the wires short and soldered them in. <br />
 <a href="/projects/images/CICO-shortenedWires.jpg" class="thickbox"><img src="/projects/images/CICO-shortenedWires-thumb.jpg" alt="Wires cut to
 length and soldered to Moteino" /></a>
 
 ## Building the Gateway
 
-- plug stuff in.
-- run code.
+This is pretty straightforward; connect the UARTs.
+
+<a href="/projects/images/CICO-firstGateway.jpg" class="thickbox"><img src="/projects/images/CICO-firstGateway-thumb.jpg" alt="Mess of wires for initial gateway" /></a><br />
+(<small>ignore the BLE dongle for now.</small>)
+
+
+## In the Cloud
+
+Having [exoline][] installed makes many tasks with the [Exosite][] platform easier.  For me its
+much quicker to write a spec file, and have [exoline][] apply it onto a new [CIK][].
+
 
 ## Data
 
@@ -78,4 +87,6 @@ outside, the ceramic interferes too much blurring all the values together.
 [1020]: https://www.adafruit.com/products/1020
 [BeagleBone]: http://beagleboard.org
 [Exosite]: http://exosite.com
+[exoline]: https://github.com/exosite/exoline 
+[CIK]: http://docs.exosite.com/rpc/#remote-procedure-call-api-authentication
 
