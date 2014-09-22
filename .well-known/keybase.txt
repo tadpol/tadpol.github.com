@@ -1,0 +1,78 @@
+==================================================================
+https://keybase.io/tadpol
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://tadpol.org
+  * I am tadpol (https://keybase.io/tadpol) on keybase.
+  * I have a public key with fingerprint 7C5B 00EA 8547 223C BF1B  E3A0 666A F760 2B4D 0504
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.6.2"
+        },
+        "key": {
+            "fingerprint": "7c5b00ea8547223cbf1be3a0666af7602b4d0504",
+            "host": "keybase.io",
+            "key_id": "666AF7602B4D0504",
+            "uid": "95686040b654cd75280c627d8b992100",
+            "username": "tadpol"
+        },
+        "merkle_root": {
+            "ctime": 1411396488,
+            "hash": "841f5ebdadfcad8afc2857132b6f6a047adbbbb951816c57cc4134bcbb5296dc39397c5d0c897a30fb61e82583db989ec269e1a6b9e07c724a1d257b6ee661cd",
+            "seqno": 53395
+        },
+        "service": {
+            "hostname": "tadpol.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411396562,
+    "expire_in": 157680000,
+    "prev": "aca8ed5ac985773cb8a91a84bf01545641e594caadfbf28cd30f56dcba7bb981",
+    "seqno": 2,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFVkltsFUUYx0+v6LEYbBUUzfFkk0oI9TCzOzM7c0ASpfRBVCCh7QvhOLdtt5zu
+nu5Zqg02JJBAiDZguEhJKD4qKp6ICTZCopA0hPJkvJRgCrHG0JiI+gBtIsJsU6Kd
+p738vv/3/f/fHFpck0pXeT1331z1el1t1fi0SG3NOt/tskSoBqz8LksWfR3EyVPA
+e7WVt3boAcHLOueH2SBUOtdTzs4zLVa/jsp+GBgK5EjOtgZbEjwp9vygS0elyE+0
+LFdiAYDmFCPXth0pPCi0wwEhhHsuAbZACmCAjGR3WI4XdLXmNAu+Ml8N/3Jbwr+C
+Wuf5nXM/GCaUAAQEwUgqF9sUSGK7igrGbAhAApZ1NG8p5qoUFpNpe3W0o6gLURjO
+WZaxnwAQQegwgig18/BytymhCHpYC8WVJ7mi3JM2xS50bEE8wgFyuRLmMAwpJBK7
+UiLoICGFwDYjSjrMYSYFBSRlLneAJwjU1MbUUYJRpqVNmIacCKaBK10bcahs7Aqi
+NSFQKmOgrPuC0Mpjx2F4MHmN+n2pk7GTzBZYy4VRl6koRWEcSuM0b3XHcSmfOI4H
+Sgn3lhaFOYWPpC4IP1BmX/9fKDTowjQwsVss/XbJj3TBTwjsEgrMSfrofqPJJada
+YS6ZicY1W6acQU6R8ADECBMENWZIcpOh8GwqlYkBm2wEd01yFP7n0XSKeZeRLPtd
+AY93RtoaPFD1XG2qKp2qr6tObmwq/eiSh9f44qZF/64scXDyg8PfD5+60UQuZG6v
+0H3emX/6a9MNY31D7alFs7lP3nnyxldX37v5xPW7mdHKx/LshqYXR346O/iSeLX+
+SPPNhubPl/1S//ThY+FIZvzd6u2/D0+/kHn/4MSma8dT6V/PXdnYWdnwzJZPNzYd
++/Doytk9M7N7TnVuvrxi9Wgm/8Vvt6r/kO1rnw+XNExvLky+VtP2yOmJ9jHZ+Fll
+Co43Tu7t/nLpzJ+Tf43c071Do+OPNx9fP/VG68i5S0eK+3Ht1m3XlndMzaDhmTun
+bz+7++fdF+/dn83+/dSJdWo79YIfzm/pOPrjEMseGFvzTRs/0zNcWFfXcb3Quvpb
+/+u2x/YtvVOs3Ko8AA==
+=OD0c
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tadpol
+
+==================================================================
+
