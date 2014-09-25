@@ -16,6 +16,8 @@ my body.
 
 I set off to find out.
 
+(<small>This project is in progress. I'll update this page as I get things figured
+out.</small>)
 
 ## The Plan
 
