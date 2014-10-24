@@ -72,6 +72,10 @@ This is pretty straightforward; connect the UARTs.
 Having [exoline][] installed makes many tasks with the [Exosite][] platform easier.  For me its
 much quicker to write a spec file, and have [exoline][] apply it onto a new [CIK][].
 
+## Mobile
+
+Because I can, I'm also building an iOS app.
+<a href="/projects/images/CICO-iOS-Cup-0.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-iOS-Cup-0-thumb.jpg" alt="iOS app and coffee mug next to each other with matching bars" /></a>
 
 ## Data
 
