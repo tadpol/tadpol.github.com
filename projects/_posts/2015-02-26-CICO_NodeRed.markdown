@@ -31,7 +31,7 @@ to install with.  This [gist](https://gist.github.com/Belphemur/cf91100f81f2b37b
 getting that process started, but I had some changed that were specific to my setup.
 
 With that in place, I built up the flow to get data from the UART over to Exosite.<br/>
-<a href="/projects/images/CICO-FirstFlow.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-FirstFlow-thumb.jpg" alt="The flow from Node-RED for taking data from UART to Exosite" /></a><br/>
+<a href="/projects/images/CICO-FirstFlow.png" class="thickbox" rel="CICO"><img src="/projects/images/CICO-FirstFlow-thumb.png" alt="The flow from Node-RED for taking data from UART to Exosite" /></a><br/>
 (<small>Fern is the other [Moteino][] I have that is collecting Temperature, Humidity and
 Lux.</small>)
 
@@ -63,7 +63,7 @@ return msg;
 ```
 
 
-
+[CICO]: /projects/2014/09-17/CoffeeInCoffeeOut.html
 [debs]: https://www.debian.org/distrib/packages
 [Moteino]: http://lowpowerlab.com/moteino/
 [Exosite]: http://exosite.com
