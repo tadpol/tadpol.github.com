@@ -39,24 +39,24 @@ It took two small script functions to twist the data around.  The first to conve
 from the UART into objects, and the second to build the alias to value map that Exosite uses.
 
 Field splits:<br/>
-	var values = msg.payload.split(' ');
-	msg.device = values[0].replace(/\[|\]/g,'');
-	msg.payload = values.slice(1);
-	return msg;
+    var values = msg.payload.split(' ');
+    msg.device = values[0].replace(/\[|\]/g,'');
+    msg.payload = values.slice(1);
+    return msg;
 
 Array To Map:<br/>
-	var pl = {};
-	pl.rssi = msg.payload[0];
-	pl.temp0 = msg.payload[2];
-	pl.temp1 = msg.payload[3];
-	pl.temp2 = msg.payload[4];
-	pl.temp3 = msg.payload[5];
-	pl.temp4 = msg.payload[6];
-	pl.temp5 = msg.payload[7];
-	pl.temp6 = msg.payload[8];
-	pl.battery = msg.payload[9];
-	msg.payload = pl;
-	return msg;
+    var pl = {};
+    pl.rssi = msg.payload[0];
+    pl.temp0 = msg.payload[2];
+    pl.temp1 = msg.payload[3];
+    pl.temp2 = msg.payload[4];
+    pl.temp3 = msg.payload[5];
+    pl.temp4 = msg.payload[6];
+    pl.temp5 = msg.payload[7];
+    pl.temp6 = msg.payload[8];
+    pl.battery = msg.payload[9];
+    msg.payload = pl;
+    return msg;
 
 
 [CICO]: /projects/2014/09-17/CoffeeInCoffeeOut.html
