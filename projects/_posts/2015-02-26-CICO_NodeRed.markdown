@@ -38,6 +38,7 @@ Lux.</small>)
 It took two small script functions to twist the data around.  The first to convert the lines
 from the UART into objects, and the second to build the alias to value map that Exosite uses.
 
+<!-- 
 Field splits:<br/>
     var values = msg.payload.split(' ');
     msg.device = values[0].replace(/\[|\]/g,'');
@@ -57,7 +58,7 @@ Array To Map:<br/>
     pl.battery = msg.payload[9];
     msg.payload = pl;
     return msg;
-
+-->
 
 [CICO]: /projects/2014/09-17/CoffeeInCoffeeOut.html
 [debs]: https://www.debian.org/distrib/packages
