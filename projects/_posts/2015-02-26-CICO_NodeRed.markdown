@@ -2,7 +2,7 @@
 layout: default
 created: "2015-02-26T07:57"
 title: "Coffee In Coffee out with Node-RED"
-tagline: "Putting my {coffee mug} online"
+tagline: "Getting the {coffee mug data} into the cloud"
 date: "2015-02-26T07:57"
 thickbox: true
 ---
@@ -39,15 +39,12 @@ It took two small script functions to twist the data around.  The first to conve
 from the UART into objects, and the second to build the alias to value map that Exosite uses.
 
 Field splits:<br/>
-```javascript
 	var values = msg.payload.split(' ');
 	msg.device = values[0].replace(/\[|\]/g,'');
 	msg.payload = values.slice(1);
 	return msg;
-```
 
 Array To Map:<br/>
-```javascript
 	var pl = {};
 	pl.rssi = msg.payload[0];
 	pl.temp0 = msg.payload[2];
@@ -60,7 +57,6 @@ Array To Map:<br/>
 	pl.battery = msg.payload[9];
 	msg.payload = pl;
 	return msg;
-```
 
 
 [CICO]: /projects/2014/09-17/CoffeeInCoffeeOut.html
