@@ -18,7 +18,7 @@ With a couple wooden stirring sticks, hot glue, and zip ties everything is go.
 The 150mAh Lipo gives approximately 10 days of run time.  So I may in the future someday look
 into using a super capacitor instead.  But for now, this is good.
 
-<a href="/projects/images/CICO-inductive.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-inductive-thumb.png" alt="Inductive charger mounted on the coffee mug." /></a><br/>
+<a href="/projects/images/CICO-inductive.jpg" class="thickbox" rel="CICO"><img src="/projects/images/CICO-inductive-thumb.jpg" alt="Inductive charger mounted on the coffee mug." /></a><br/>
 
 
 [CICO]: /projects/2014/09-17/CoffeeInCoffeeOut.html
