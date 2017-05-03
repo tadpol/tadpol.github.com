@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Tadpol’s</title>
+        <link>http://tadpol.org</link>
+        <description></description>
+        <language>en-us</language>
+        <pubDate>2017-05-03T08:38-0500</pubDate>
+        <lastBuildDate>2017-05-03T08:38-0500</lastBuildDate>
+        <item>
+            <title>first post</title>
+            <pubDate>2017-05-03T08:38-0500</pubDate>
+            <guid>http://tadpol.org/micro-2017-05-03T08:38-0500</guid>
+        </item>
+    </channel>
+</rss>
+
