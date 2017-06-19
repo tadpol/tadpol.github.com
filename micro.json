@@ -1,0 +1,26 @@
+---
+layout: none
+---
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": {{ site.name | smartify | jsonify }},
+    {% if site.description %}"description": {{ site.description | smartify | jsonify }},{% endif %}
+    "home_page_url": "{{ site.url }}/",
+    "feed_url": "{{ site.url }}/micro.json",
+    "icon": "{{ site.url }}/images/tadpol_icon_57.png",
+    "favicon": "{{ site.baseurl }}/favicon.ico",
+    "expired": false,
+    "items": [
+{% for post in site.posts %}
+        {
+            "id": "{{ post.id }}",
+            "title": {{ post.title | smartify | jsonify }},
+            "content_html": {{ post.content | jsonify }},
+            "url": "{{ site.url }}{{ post.url }}",
+            "summary": {{ post.excerpt | smartify | jsonify }},
+            "date_published": "{{ post.date }}"
+        }{% unless forloop.last == true %},{% endunless %}
+{% endfor %}
+    ]
+}
+
