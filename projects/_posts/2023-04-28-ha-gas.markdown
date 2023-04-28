@@ -1,0 +1,51 @@
+---
+layout: default
+created: "2023-04-28T12:04:38-0500"
+title: "Home Energy Usage – Gas"
+tagline: "Monitoring {home energy useage}; first {gas}."
+date: "2023-04-28T12:04:38-0500"
+---
+
+Home Assistant had added energy monitoring some revisions ago.  Which nicely plopped one more ting on my want to do list.
+Oddly enough, the easiest thing to add was the gas meter.
+
+Some time ago I had purchased a SDR dongle to attempt to intercept the packets for my weather station.
+After a lot of fighting with that, I found it much easier to just use the [wundergroundpws][] custom componet and pull the data that it uploads to [Weather Underground](https://www.wunderground.com).
+
+We had gotten new gas meters some years ago, and from those fliers, I knew it used radio of some sort.  Looking at my gas meter, I
+saw the ITron branding. A few web searches later, it seemed likely to be using the 915MHz and using something called ERT-SCM.
+So I tuned the SDR over to 915MHz, and left it be for a few days to see what would turn up.  I found the packets I was looking for.
+
+## Collector
+
+A raspberry pi with a USB RTL-SDR dongle.  Running [rtl-433](https://github.com/merbanan/rtl_433) which despite the name, handles 915MHz just fine.
+
+I have an [ansible role](https://github.com/tadpol/gwcfg/tree/master/roles/rtl_433) setup to install rtl-433, configure it, and
+install a systemd service to control it.  Everything it finds gets pushed into the MQTT broker I have running.
+
+## Home Assistant
+
+I have [Home Assistant][] running in [Docker][] on my [Synology][].  Along with the MQTT broker in another docker container.
+
+With the decoded ERT-SCM packets also in MQTT now, I added a manual config to get the sensor into HA.
+
+{% raw %}
+```yaml
+mqtt:
+  sensor:
+    - name: "Gas Meter"
+      unique_id: gas1234567890
+      device_class: gas
+      state_topic: rtl_433/node/devices/ERT-SCM/1234567890/consumption_data
+      state_class: total_increasing
+      unit_of_measurement: CCF
+      value_template: "{{ (value | float)/100 }}"
+```
+{% endraw %}
+
+Then over to the Energy dashboard and followed the wizard thingy there to add the gas sensor.
+
+[Home Assistant]: https://home-assistant.io/
+[Docker]: https://docker.com/
+[Synology]: https://synology.com/
+[wundergroundpws]: https://github.com/cytech/Home-Assistant-wundergroundpws/tree/v2.X.X
