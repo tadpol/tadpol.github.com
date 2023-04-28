@@ -4,7 +4,7 @@ created: "2009-03-11 20:42:41 -0500"
 title: "Lydkone"
 tagline: "{Walking} the fine line between {noise} and {music}"
 date: "2009-03-11 20:42:41 -0500"
-thickbox: true
+lightbox: true
 ---
 
 
@@ -20,11 +20,11 @@ First thing is to figure out how to make sound with the [Arduino][].  Fortunatel
 
 So I made a quick stop at Radio Shack for resistors and spent some time to populate the [Proto Shield][ProtoShield].  This did mean that the resisters in the [R2R][] are not perfectly R and 2R, but its close enough.
 <br />
-<a href="/projects/images/Lydkone-output-prototype.jpg" class="thickbox"><img src="/projects/images/Lydkone-output-prototype-thumb.jpg"/></a>
+<a href="/projects/images/Lydkone-output-prototype.jpg" data-lightbox="A"><img src="/projects/images/Lydkone-output-prototype-thumb.jpg"/></a>
 
 Once I was convinced that the hardware would work, I got another [Proto Shield][ProtoShield] and soldered things down.
 <br />
-<a href="/projects/images/Lydkone-output.jpg" class="thickbox"><img src="/projects/images/Lydkone-output-thumb.jpg"/></a>
+<a href="/projects/images/Lydkone-output.jpg" data-lightbox="A"><img src="/projects/images/Lydkone-output-thumb.jpg"/></a>
 
 
 With the output hardware all finished up, I need some software to drive it.  This took a bit because my initial design was based on having a single sample, and bending the pitch in the [Arduino][] for each DAC to get the different notes; that is three concurrent pitch bends at once.  There were many failed implementations trying to do this.  Finally, I changed my design to have five samples, one for each note.  The initial implementation of this new design worked as desired the first time.  Good thing to keep in mind; if things are going too tough, try doing it differently.
@@ -37,7 +37,7 @@ As stated above, playing the Lydkone is done with five keys with a [theremin][] 
 
 Pressure sensors run about $5 or more a piece, and I'm no too keen at this point to be spending that much on sensors.  Making your own pressure sensor is quiet straightforward.  Take some conductive foam and some copper clad pcb. Then add wires a a small touch of glue to hold it together.  TaDa! Pressure sensors:
 <br />
-<a href="/projects/images/Lydkone-pressure-sensors.jpg" class="thickbox"><img src="/projects/images/Lydkone-pressure-sensors-thumb.jpg"/></a>
+<a href="/projects/images/Lydkone-pressure-sensors.jpg" data-lightbox="A"><img src="/projects/images/Lydkone-pressure-sensors-thumb.jpg"/></a>
 
 Now one twist left for these: sampling.  Running the ADC takes time, but we want this to be quite responsive.  It is not good if it takes a second or more after pressing a key to get sound.  Actually, it is not good if it takes more than a couple hundred milli-seconds.  So if we use the stock `analog_read()` function, it takes about 600 to 700 milli-seconds to read all of the ADCs.  That is simply too long.  This is because while there are 6 ADC inputs, there is actually only one ADC.
 
@@ -45,7 +45,7 @@ There are two things that the data sheet clues us into to help deal with this.  
 
 To get the best results from our analog sensors, we want them to span the nearly the entire range of voltage that the ADC can take.  Default for the [Arduino][] is 0 to 5 volts.  This is done with a simple [voltage divider][VoltageDivider].  You can make either R<sub>1</sub> or R<sub>2</sub> adjustable, I chose R<sub>2</sub> because it made the layout on the [proto-board][ProtoShield] easier.  After a little spreadsheet work, I found that a good value for R<sub>1</sub> is about midpoint of the range of R<sub>2</sub>.
 <br />
-<a href="/projects/images/Lydkone-voltage-divider.jpg" class="thickbox"><img src="/projects/images/Lydkone-voltage-divider-thumb.jpg"/></a>
+<a href="/projects/images/Lydkone-voltage-divider.jpg" data-lightbox="A"><img src="/projects/images/Lydkone-voltage-divider-thumb.jpg"/></a>
 
 Then I discovered the biggest hurdle of homemade sensors, that each one is different.  This is true with any kind of sensor actually; it just seems a bit exaggerated with homemade ones.  The upside is that this can be completely handled in software.  I already need to map the range of the ADC output to a useful volume range.  So now instead of mapping from the entire ADC range, I just use a subset range of what a given sensor actually produces.
 
@@ -67,13 +67,13 @@ Here is a quick sound test.  You'll need to turn it up a bit, since there is onl
 <br />
 <a href="/projects/images/Lydkone-sound-test.mov"><img src="/projects/images/Lydkone-sound-test-thumb.jpg"/></a>
 
-<a href="/projects/images/Lydkone-allwires.jpg" class="thickbox"><img src="/projects/images/Lydkone-allwires-thumb.jpg"/></a>
+<a href="/projects/images/Lydkone-allwires.jpg" data-lightbox="A"><img src="/projects/images/Lydkone-allwires-thumb.jpg"/></a>
 
 When I started this, I really didn't understand how sound generation worked at all.  Now that I've gone through this, I think the only real change I would make is to have a single eight or twelve bit R2R. Then just do the mixing inside the [Arduino][], rather than having three four bit R2R's and having them mixed electrically.  (<small>It wouldn't be too hard to convert this construction... Maybe some other time.</small>)
 
 ###Data
 
-<a href="/projects/images/Lydkone-Schematic.png" class="thickbox"><img src="/projects/images/Lydkone-Schematic-thumb.png"/></a>
+<a href="/projects/images/Lydkone-Schematic.png" data-lightbox="A"><img src="/projects/images/Lydkone-Schematic-thumb.png"/></a>
 <br />
 <a href="/projects/archives/lydkone.zip">SRC</a>
 

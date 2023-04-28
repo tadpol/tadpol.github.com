@@ -4,7 +4,7 @@ created: "2007-10-07 19:35:36 -0500"
 title: "Steam Passenger Train"
 tagline: "Not Often To See {Steam Power} On Today's {Rails}"
 date: "2007-10-07 19:35:36 -0500"
-thickbox: true
+lightbox: true
 ---
 
 
@@ -13,8 +13,8 @@ On my way back to the cities this weekend, I saw a steam passenger train running
 
 
 
-<a href="/images/steam-train-1b.jpg" class="thickbox" rel="train"><img src="/images/steam-train-1.jpg"/></a>
+<a href="/images/steam-train-1b.jpg" data-lightbox="train"><img src="/images/steam-train-1.jpg"/></a>
 
-<a href="/images/steam-train-2b.jpg" class="thickbox" rel="train"><img src="/images/steam-train-2.jpg"/></a>
+<a href="/images/steam-train-2b.jpg" data-lightbox="train"><img src="/images/steam-train-2.jpg"/></a>
 
 

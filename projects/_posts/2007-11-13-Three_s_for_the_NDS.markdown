@@ -3,7 +3,7 @@ layout: default
 created: "2007-11-13 20:10:23 -0600"
 title: "Three's for the NDS"
 date: "2007-11-13 20:10:23 -0600"
-thickbox: true
+lightbox: true
 ---
 
 
@@ -16,7 +16,7 @@ The two biggest issues where that I learned [lua][] v5.1 first, then discovered 
 
 A truly horrid screen shot done with a cell phone camera.
 
-<a href="/projects/images/ndsThreesScreen.jpg" class="thickbox"><img src="/projects/images/ndsThreesThumb.png"/></a>
+<a href="/projects/images/ndsThreesScreen.jpg" data-lightbox="A"><img src="/projects/images/ndsThreesThumb.png"/></a>
 
 <!--
 ## Requirements and Downloads

@@ -4,7 +4,7 @@ created: "2008-01-08 19:33:06 -0600"
 title: "First Set Designed"
 tagline: "It is not as if I don't have enough reasons to buy {LEGO}s already, but {designing my own}? Am so there."
 date: "2008-01-08 19:33:06 -0600"
-thickbox: true
+lightbox: true
 ---
 
 
@@ -28,13 +28,13 @@ So I did.
 
 And here it is, unopened:<br/>
 
-<a href="/images/firstLegoBox.jpg" class="thickbox" rel="lego"><img src="/images/firstLegoBox-s.jpg"/></a>
+<a href="/images/firstLegoBox.jpg" data-lightbox="lego"><img src="/images/firstLegoBox-s.jpg"/></a>
 
 
 
 Then built:<br/>
 
-<a href="/images/firstLegos.jpg" class="thickbox" rel="lego"><img src="/images/firstLegos-s.jpg"/></a>
+<a href="/images/firstLegos.jpg" data-lightbox="lego"><img src="/images/firstLegos-s.jpg"/></a>
 
 
 

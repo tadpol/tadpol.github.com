@@ -4,7 +4,7 @@ created: "2008-12-14 09:04:19 -0600"
 title: "Visualizing Routes"
 tagline: "Is when I {get there} affected more by when I {leave} or my {travel}?"
 date: "2008-12-14 09:04:19 -0600"
-thickbox: true
+lightbox: true
 ---
 
 
@@ -22,7 +22,7 @@ This was too easy.  So I added a very basic plot that was colored by speed, just
 
 But I had fun playing with the data and building this tool, so it was a net gain.
 
-<a href="/projects/images/routeMapViewerWXP.png" class="thickbox"><img src="/projects/images/routeMapViewerWXPs.png"/></a><br/>
+<a href="/projects/images/routeMapViewerWXP.png" data-lightbox="A"><img src="/projects/images/routeMapViewerWXPs.png"/></a><br/>
 (<small>I also was too lazy to compile [tdom][] for MacOSX, and just ran XP inside of [VirtualBox][]. Just in case you're wonding about the screenshot here.</small>)
 
 Silly me forgot to put this up first time around, but [here is the code](http://tadpol.org/projects/archives/routeMap.tcl.zip).

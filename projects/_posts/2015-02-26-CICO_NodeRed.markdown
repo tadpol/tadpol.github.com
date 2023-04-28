@@ -4,7 +4,7 @@ created: "2015-02-26T07:57"
 title: "Coffee In Coffee out with Node-RED"
 tagline: "Getting the {coffee mug data} into the cloud"
 date: "2015-02-26T07:57"
-thickbox: true
+lightbox: true
 ---
 
 
@@ -31,7 +31,7 @@ to install with.  This [gist](https://gist.github.com/Belphemur/cf91100f81f2b37b
 getting that process started, but I had some changed that were specific to my setup.
 
 With that in place, I built up the flow to get data from the UART over to Exosite.<br/>
-<a href="/projects/images/CICO-FirstFlow.png" class="thickbox" rel="CICO"><img src="/projects/images/CICO-FirstFlow-thumb.png" alt="The flow from Node-RED for taking data from UART to Exosite" /></a><br/>
+<a href="/projects/images/CICO-FirstFlow.png" data-lightbox="CICO"><img src="/projects/images/CICO-FirstFlow-thumb.png" alt="The flow from Node-RED for taking data from UART to Exosite" /></a><br/>
 (<small>Fern is the other [Moteino][] I have that is collecting Temperature, Humidity and
 Lux.</small>)
 

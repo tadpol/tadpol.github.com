@@ -4,11 +4,11 @@ created: "2012-02-02 10:44:00 -0600"
 title: "Avrian Jump"
 tagline: "{Assembling} ladders in the {web}"
 date: "2012-02-02 10:44:00 -0600"
-thickbox: true
+lightbox: true
 ---
 
 
-<a href="/projects/images/avrianjump.jpg" class="thickbox"><img src="/projects/images/avrianjump-thumb.jpg" alt="Arduino with Audioino and a MacBook running Safari and Avrian Jump"/></a>
+<a href="/projects/images/avrianjump.jpg" data-lightbox="A"><img src="/projects/images/avrianjump-thumb.jpg" alt="Arduino with Audioino and a MacBook running Safari and Avrian Jump"/></a>
 
 A very simple ladder language for programming ATMega168s from a web browser.
 

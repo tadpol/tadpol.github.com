@@ -4,11 +4,11 @@ created: "2009-07-19 21:04:58 -0500"
 title: "Honey Curry Chicken Supper"
 tagline: "{Honey Curry Chicken} with {Summer Squash} and {Mashed Potatoes}"
 date: "2009-07-19 21:04:58 -0500"
-thickbox: true
+lightbox: true
 ---
 
 
-<a href="/images/honeycurrychicken.jpg" class="thickbox"><img src="/images/honeycurrychicken_tn.jpg"/></a>
+<a href="/images/honeycurrychicken.jpg" data-lightbox="A"><img src="/images/honeycurrychicken_tn.jpg"/></a>
 
 
 	  Amount  Measure       Ingredient — Preparation Method
