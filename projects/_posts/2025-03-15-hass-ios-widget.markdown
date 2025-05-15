@@ -127,28 +127,29 @@ function heat_index(temp, hum) {
     -0.22475541,
     -6.83783e-3,
     -5.481717e-2,
-    -1.22874e-3,
-    -8.5282e-4,
+    1.22874e-3,
+    8.5282e-4,
     -1.99e-6,
   ];
+  const hum1 = hum / 100;
   const temp2 = Math.pow(temp, 2);
-  const hum2 = Math.pow(hum, 2);
+  const hum2 = Math.pow(hum1, 2);
 
   const fhi = c[0] +
     (c[1] * temp) +
-    (c[2] * hum) +
-    (c[3] * temp * hum) +
+    (c[2] * hum1) +
+    (c[3] * temp * hum1) +
     (c[4] * temp2) +
     (c[5] * hum2) +
-    (c[6] * temp2 * hum) +
+    (c[6] * temp2 * hum1) +
     (c[7] * temp * hum2) +
     (c[8] * temp2 * hum2);
 
   let adj = 0;
   if( hum < 13 && temp > 80 && temp < 112) {
-    adj = ((13 - hum)/4) * Math.sqrt((17-Math.abs(temp-95))/17);
+    adj = ((0.13 - hum1)/4) * Math.sqrt((17-Math.abs(temp-95))/17);
   } else if( hum > 85 && temp > 80 && temp < 87) {
-    adj = ((hum-85)/10) * ((87 - temp)/5);
+    adj = ((hum1-0.85)/10) * ((87 - temp)/5);
   }
 
   return fhi - adj;
