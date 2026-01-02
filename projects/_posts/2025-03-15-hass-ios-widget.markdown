@@ -12,6 +12,7 @@ The first step was to create a [Long-lived access token](https://developers.home
 
 Next to build up the [Scriptable][] script.  This is just javascript, with some custom things for working on iOS.  I kept it simple and just used a [ListWidget](https://docs.scriptable.app/listwidget/) with emoji for color.  The most complex parts of the script are where I convert wind direction to arrows, and converting measured temperature into feels-like temperature.
 
+<!-- markdownlint-disable-next-line MD033 -->
 <a href="/projects/images/scriptable_weather_widget.png" data-lightbox="CICO"><img width=237 height=237 src="/projects/images/scriptable_weather_widget.png" alt="Screen capture of the weather widget showing current conditions" /></a><br/>
 
 The script isn't the most re-usably written, but its small.
